@@ -1,0 +1,19 @@
+{
+  "packages": [
+    "git@latest",
+    "python39Packages.pip@latest",
+    "python39@latest",
+    "which@latest",
+    "nodePackages.ganache-cli@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      ". $VENV_DIR/bin/activate",
+      "pip install -r requirements.txt"
+    ],
+    "scripts": {
+      "run_test": "python main.py",
+      "cls":      "printf '\\33c\\e[3J'"
+    }
+  }
+}
