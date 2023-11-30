@@ -1,6 +1,26 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "cmake@latest": {
+      "last_modified": "2023-11-17T14:14:56Z",
+      "resolved": "github:NixOS/nixpkgs/a71323f68d4377d12c04a5410e214495ec598d4c#cmake",
+      "source": "devbox-search",
+      "version": "3.27.7",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/xckcwsyrgm5jwlwqgng19j8r0gy4w8ar-cmake-3.27.7"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/m7c4ygkg2lkfnysj8042z34f615nj3z6-cmake-3.27.7"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/nsk9a663g0khs9li1hwwqlsxsvqd0x9d-cmake-3.27.7"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/vnhl4zdy7igx9gd3q1d548vwzz15a9ma-cmake-3.27.7"
+        }
+      }
+    },
     "git@latest": {
       "last_modified": "2023-11-17T14:14:56Z",
       "resolved": "github:NixOS/nixpkgs/a71323f68d4377d12c04a5410e214495ec598d4c#git",
@@ -26,6 +46,26 @@
       "resolved": "github:NixOS/nixpkgs/4c3c80df545ec5cb26b5480979c3e3f93518cbe5#nodePackages.ganache-cli",
       "source": "devbox-search",
       "version": "6.12.2"
+    },
+    "nodejs@latest": {
+      "last_modified": "2023-11-17T14:14:56Z",
+      "resolved": "github:NixOS/nixpkgs/a71323f68d4377d12c04a5410e214495ec598d4c#nodejs_21",
+      "source": "devbox-search",
+      "version": "21.2.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/waq8bb12nbqwxxn1lgvdzsgs0gqk0d04-nodejs-21.2.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/v03cn5xw03nxykgix04r1l31jjrgf9d3-nodejs-21.2.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/sv6nivfsqcl8s1dhqjpjy8dqvbx9mxwl-nodejs-21.2.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/iklfdn5l792z46dl5qq9zqzqsmp2m4m9-nodejs-21.2.0"
+        }
+      }
     },
     "python39@latest": {
       "last_modified": "2023-11-17T14:14:56Z",
@@ -66,6 +106,17 @@
         },
         "x86_64-linux": {
           "store_path": "/nix/store/8v8qk7icwcybpxmwjblyxlb4gy7ignpm-python3.9-pip-22.2.2"
+        }
+      }
+    },
+    "solc@latest": {
+      "last_modified": "2023-11-17T14:14:56Z",
+      "resolved": "github:NixOS/nixpkgs/a71323f68d4377d12c04a5410e214495ec598d4c#solc",
+      "source": "devbox-search",
+      "version": "0.8.21",
+      "systems": {
+        "x86_64-linux": {
+          "store_path": "/nix/store/vgxc7yzpvkr5vwhrgf0abcx2jx6zhp8w-solc-0.8.21"
         }
       }
     },

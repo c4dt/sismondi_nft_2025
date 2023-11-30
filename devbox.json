@@ -4,7 +4,10 @@
     "python39Packages.pip@latest",
     "python39@latest",
     "which@latest",
-    "nodePackages.ganache-cli@latest"
+    "nodePackages.ganache-cli@latest",
+    "cmake@latest",
+    "nodejs@latest",
+    "solc@latest"
   ],
   "shell": {
     "init_hook": [
