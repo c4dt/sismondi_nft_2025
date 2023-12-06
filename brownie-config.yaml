@@ -8,6 +8,7 @@ compiler:
 dotenv: .env
 
 networks:
+  default: sepolia
   sepolia:
     verify : false
   development:

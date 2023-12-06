@@ -23,13 +23,15 @@ def mint(addr):
     sismondi_contract = SismondiNFT.at(addr)
     nft = sismondi_contract.makeSismondiNFT({'from': account})
     nft_id = nft.events['NewSismondiNFTMinted']['tokenId']
-    log(f"A new NFT wit id {nft_id} has been successfully created in block {nft.block_number} with transaction {nft.txid}")
+    log(f"A new NFT with id {nft_id} has been successfully created in block {nft.block_number} with transaction {nft.txid}")
     return nft
 
 def deploy_mint():
     contract = deploy()
+    print("\n---\n")
     nft = mint(contract.address)
     log(f"{nft.events}")
+    print("\n---\n")
     nft = mint(contract.address)
     log(f"{nft.events}")
 
