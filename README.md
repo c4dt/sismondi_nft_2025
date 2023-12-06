@@ -41,7 +41,77 @@ On utilisera ici le porte-feuille le plus connu: Metamask.
 
 ### Installation Metamask
 
+[Metamask](https://metamask.io/)
+
 ### Faucets:
-https://sepolia-faucet.pk910.de
+[Faucet](https://sepolia-faucet.pk910.de)
 
 ### Etherscan
+
+[Etherscan](https://sepolia.etherscan.io)
+
+## NFTs
+
+### Intro
+
+### Préparation des images
+
+- Utiliser le script [scripts/images.py]
+- Entrer les images dans [scripts/sismondi.py]
+
+### Création d'un contrat NFT
+
+Localement sur la chaîne de développement:
+
+```bash
+./brownie.sh run sismondi.py deploy
+```
+
+Avec un `--network sepolia` à la fin, c'est plus sérieux: on va se mettre sur la chaîne de test.
+
+### Minter un NFT
+
+Localement sur la chaîne de développement:
+
+```bash
+./brownie.sh run sismondi.py deploy_mint
+```
+
+Ou sur la chaîne de test:
+
+```bash
+./brownie.sh run sismondi.py mint 0xcontract_id_in_hex --network sepolia
+```
+
+## Utilisation des NFTs
+
+### Ajout au portefeuille Metamask
+
+### Suivi dans OpenSea
+
+https://opensea.io/
+
+### Envoi vers d'autres utilisateurs
+
+???
+
+## Installation locale
+
+Pour l'installation locale, il faut commencer à installer docker:
+
+[Commencer avec Docker](https://www.docker.com/get-started/)
+
+Puis on peut préparer l'image avec:
+
+```
+docker compose build
+```
+
+Après on peut utiliser `./brownie.sh`
+
+## Documentation
+
+- Howto on which the hands-on is based: [Deploy Your First NFT With Python](https://www.codeforests.com/2022/01/14/deploy-your-first-nft-with-python/) - 
+    [Github with contract](https://github.com/codeforests/brownie_legendnft) 
+- Contract used in the hands-on: [openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master) 
+[Definition of ERC 721](https://docs.openzeppelin.com/contracts/4.x/api/token/erc721) 

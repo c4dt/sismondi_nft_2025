@@ -1,1 +1,2 @@
-eth-ape==0.6.26
+eth-brownie==1.19.3
+Pillow==10.1.0

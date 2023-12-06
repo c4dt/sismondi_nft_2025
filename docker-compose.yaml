@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  brownie:
+    image: c4dt/brownie:latest
+    build: .
+    volumes:
+      - .:/root
+    platform: linux/amd64

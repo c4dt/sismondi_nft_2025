@@ -8,7 +8,7 @@ compiler:
 dotenv: .env
 
 networks:
-  rinkeby:
+  sepolia:
     verify : false
   development:
     verify : false
