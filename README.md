@@ -84,8 +84,16 @@ suivre les transactions sur votre compte et depuis votre compte:
 - Copier les images dans les sous-répertoires de [./images] en remplaçant les images
 qui sont déjà présentes
 - Utiliser le script [./scripts/images.py] en ajoutant les images, y inclus le chemin
-- Entrer les images converties dans [./scripts/sismondi.py] pour remplacer la valeur unique
-actuellement dans la variable `images`.
+  - Si vous avez de la peine avec les versions python, vous pouvez lancer ce script 
+  avec la commande `./mk_images.sh`
+- Il y a deux parties qu'il faut copier/coller dans le contrat `./contracts/SismondiNFT.sol`:
+  - La partie `Prefix` doit suivre la déclaration d'`images_prefix`. 
+  Ne pas oublier le `;` à la fin!
+  - Les valeurs après le `Images are:` doivent remplacer ceux actuellement dans le
+  tableau de `images`
+- Vous pouvez aussi modifier la liste des mots qui est utilisé pour nommer vos NFTs.
+
+Chaque NFT se verra attribuer aléatoirement une des images et aussi aléatoirement un mot.
 
 ## Configurez l'intéraction avec la chaîne "Sepolia"
 
