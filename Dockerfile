@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM python:3.10
 
 WORKDIR /root
 RUN curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
