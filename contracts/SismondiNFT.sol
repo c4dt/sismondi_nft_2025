@@ -33,7 +33,7 @@ contract SismondiNFT is ERC721URIStorage {
 
 
     constructor() ERC721 ("Sismondi Shoes Short", "SiSho4") {
-        totalSupply = 1000000;
+        totalSupply = 10;
     }
 
     function pickRandomWord(uint256 tokenId) internal view returns (string memory) {

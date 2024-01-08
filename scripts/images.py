@@ -3,9 +3,11 @@ import io
 import os
 import base64
 
+image_dir = os.path.join(os.path.dirname(__file__), "..", "images")
+
 def create_composite_image(file_paths, output_width):
     # Load the images
-    images = [Image.open(fp).convert("RGBA") for fp in file_paths]
+    images = [Image.open(os.path.join(image_dir, fp)).convert("RGBA") for fp in file_paths]
 
     # Superimpose the images one over the other
     composite = Image.alpha_composite(Image.alpha_composite(images[0], images[1]), images[2])
@@ -31,16 +33,16 @@ def get_common(images):
 
 # Example usage (replace 'file1.png', 'file2.png', 'file3.png' with actual file paths)
 backgrounds = [
-    "./images/background/file1.png",
-    "./images/background/file2.png",
+    "background/file1.png",
+    "background/file2.png",
 ]
 shoes = [
-    "./images/shoe/file1.png",
-    "./images/shoe/file2.png",
+    "shoe/file1.png",
+    "shoe/file2.png",
 ]
 soles = [
-    "./images/sole/file1.png",
-    "./images/sole/file2.png",
+    "sole/file1.png",
+    "sole/file2.png",
 ]
 
 # For-loop with all combinations of backgrounds / shoe / sole
