@@ -5,7 +5,7 @@ import base64
 
 image_dir = os.path.join(os.path.dirname(__file__), "..", "images")
 
-def create_composite_image(file_paths, output_width):
+def create_composite_image(file_paths, output_width, index):
     # Load the images
     images = [Image.open(os.path.join(image_dir, fp)).convert("RGBA") for fp in file_paths]
 
@@ -16,6 +16,9 @@ def create_composite_image(file_paths, output_width):
     aspect_ratio = composite.height / composite.width
     new_height = int(output_width * aspect_ratio)
     resized_composite = composite.resize((output_width, new_height))
+    results_dir = os.path.join(image_dir, "results")
+    os.makedirs(results_dir, exist_ok = True)
+    resized_composite.save(os.path.join(results_dir, f"composite_{index}.png"))
 
     # Convert the image to base64
     buffered = io.BytesIO()
@@ -47,11 +50,13 @@ soles = [
 
 # For-loop with all combinations of backgrounds / shoe / sole
 images_long = []
+index = 0
 for background in backgrounds:
     for shoe in shoes:
         for sole in soles:
-            img_str = create_composite_image([background, shoe, sole], 30)
+            img_str = create_composite_image([background, shoe, sole], 30, index)
             images_long.append(f"\"{img_str}\"")
+            index += 1
 
 
 prefix, images_short = get_common(images_long)

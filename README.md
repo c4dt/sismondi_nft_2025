@@ -14,7 +14,7 @@ Après-midi:
 - présentation de Linus Gasser sur les NFTs
 - exercices sur les NFTs en utilisant ce répertoire
 
-# 1.1 - Préliminaires
+# 1.1 - Mise en place
 
 On va commencer par s'installer sur l'ordinateur.
 Puis, on va faire un portefeuille pour vos jetons, et commencer
@@ -40,9 +40,9 @@ Sur la feuille que vous avez reçue, il y a un nom et un mot de passe.
 Utilisez-les pour vous connecter à votre compte.
 Puis cliquez sur "IC-Gymnases".
 
-## 1.1.3 - Fichiers de la journée
+## 1.1.3 - Fichiers et liens de la journée
 
-Pour retrouver tous les fichiers, ouvrez Firefox et entrez l'adresse
+Pour retrouver tous les fichiers et liens, ouvrez Firefox et entrez l'adresse
 suivante:
 
 1. Cliquez la grille en bas à gauche, sélectionnez "Firefox"
