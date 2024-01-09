@@ -11,6 +11,8 @@ avec un triple-clic, vous sélectionnez toute la ligne!
 
 - mot de passe du wallet
 
+- clé publique du wallet
+
 - clé privée du wallet
 
 

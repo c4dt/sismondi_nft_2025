@@ -37,6 +37,6 @@ def deploy_mint():
 
 def main():
     print("Please choose one of the following actions:")
-    print("deploy - a new contract. Add --network sepoia to deploy on test network")
+    print("deploy - a new contract. Add --network development to deploy on local development network")
     print("mint #contractid - mints a new NFT. It prints the id of the NFT")
     sys.exit(1)

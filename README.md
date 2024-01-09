@@ -19,8 +19,8 @@ Après-midi:
 Vous trouvez les transparents de la journée NFT ici: 
 https://docs.google.com/presentation/d/1x2FqWLHjh-F-auDqM0_eJ4Nv5r-jLTy-K3gfAH9umH8/edit?usp=sharing
 
-Pour poser des questions, vous pouvez utiliser le lien suivant: 
-https://slides.app.goo.gl/v8EMX
+Pour poser des questions, vous pouvez utiliser le lien que vous voyez au-dessus des slides,
+qui commence avec https://slides.app.goo.gl
 
 Pour échanger des clés publiques dans les exercices suivants, vous pouvez utiliser Chatzy avec le
 mot de passe écrit au tableau:
@@ -44,6 +44,17 @@ https://go.epfl.ch/sismondi
 ```bash
 git clone https://github.com/c4dt/sismondi_nft_2024
 ```
+
+Une fois que c'est téléchargé, vous pouvez changer dans ce répertoire avec la commande
+suivante:
+
+```bash
+cd sismondi_nft_2024
+ls
+```
+
+Ceci devrait vous montrer les fichiers dans le répertoire.
+Garder le terminal ouvert, on en aura encore besoin!
 
 ## 1.1.2 - Ouverture de Thonny
 
@@ -99,20 +110,20 @@ noté votre phrase de récupération
 Pour vous faciliter la vie, on va copier la clé publique et la clé privée dans le
 fichier `NOTES.md`:
 - recopiez votre adresse PUBLIQUE dans le fichier `NOTES.md`
-- `PRIVATE_KEY` se trouve dans la "wallet" Metamask:
+- La clé privée est protégée par Metamask:
   - cliquer sur les trois petits points à droite du nom de votre compte
   - choisissez "Account details", puis "Show private key"
   - confirmez avec votre mot de passe
   - appuyez longuement sur le bouton
   - copiez/collez la clé privée depuis la fenêtre dans le fichier `.env`
 
-# 1.2 - Charger votre portefeuille avec quelques jetons
+# 1.1.5 - Charger votre portefeuille avec quelques jetons
 
 Pour la prochaine étape, vous avez besoin de quelques jetons.
 Les réseaux blockchains de test vous permettent de recevoir des jetons gratuits.
 Bien sûr que vous ne pouvez pas revendre ces jetons, ils ne valent rien.
 
-## 1.2.1 - Utiliser un "robinet" pour les jetons
+## 1.1.6 - Utiliser un "robinet" pour les jetons
 
 Afin de recevoir quelques jetons, vous pouvez copier votre adresse depuis Metamask
 dans le robinet suivant:
@@ -121,8 +132,17 @@ dans le robinet suivant:
 
 L'adresse PUBLIQUE commence avec un `0x` et contient des chiffres et des lettres a-f.
 
-Une fois le robinet ouvert, vous attendez quelques minutes pour avoir 0.5 SepETH.
-C'est suffisant pour le moment.
+Une fois le robinet ouvert, on va continuer la présentation.
+Assurez-vous que le "minage" continue en arrière-plan, parce qu'il vous faudra
+1 SepoliaETH pour le reste de la journée.
+
+# 1.2 - Utilisation des jetons
+
+Assurez-vous que vous avez au moins 1 SepoliaETH jusqu'à maintenant.
+Puis continuez sur l'étape suivante.
+
+## 1.2.1 - Empocher la récompense
+
 Quand le montant est atteint, cliquez sur "Stop Mining", puis "Claim Rewards" et attendez que vos jetons
 se trouvent sur votre compte.
 
@@ -205,10 +225,12 @@ Une fois la régistration confirmée, vous pouvez créer une clé d'accès.
 Cette clé vous permet de vous identifier auprès d'Infura pour créer votre
 contrat.
 
-Cliquez sur `API Keys` en haut, puis `CREATE NEW API KEY`.
-Choisissez `Web3 API` et donnez un nom, par exemple `Sismondi NFT`.
-Quand la clé est créée, elle ne s'affiche qu'une seule fois!
-Copiez/collez cette clé dans votre `.env` et c'est tout bon.
+Cliquez sur `API Keys` en haut, puis choisissez la clé existante
+`My First Key`.
+Dans la page qui s'ouvre, cochez la case `Sepolia` sous `Ethereum`
+et appuyez sur `Save Changes`.
+En haut vous trouvez la clé d'accès que vous pouvez Copier/coller dans votre 
+`NOTES.md` et le `.env`.
 
 ## 1.3.4 - Le `.env`
 
@@ -216,7 +238,7 @@ Votre `.env` doit maintenant contenir quelque chose comme ça.
 Bien sûr que la clé privée et la clé d'accès auront des valeurs différentes!
 
 ```
-PRIVATE_KEY = 41ede96cc603bf0d7a0e0bd67819ebaf5802ae8ea1060a4f6f3d8b9d723a24ea
+PRIVATE_KEY = 0x41ede96cc603bf0d7a0e0bd67819ebaf5802ae8ea1060a4f6f3d8b9d723a24ea
 WEB3_INFURA_PROJECT_ID = a691dd6311fb41eb6f3d8b9d723a24ea
 ```
 
