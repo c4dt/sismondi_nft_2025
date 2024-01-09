@@ -50,7 +50,7 @@ images_long = []
 for background in backgrounds:
     for shoe in shoes:
         for sole in soles:
-            img_str = create_composite_image([background, shoe, sole], 20)
+            img_str = create_composite_image([background, shoe, sole], 30)
             images_long.append(f"\"{img_str}\"")
 
 

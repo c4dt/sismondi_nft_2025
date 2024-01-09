@@ -5,5 +5,5 @@ services:
     image: ghcr.io/c4dt/brownie:latest
     build: .
     volumes:
-      - .:/root
+      - .:/sismondi
     platform: linux/amd64

@@ -121,7 +121,7 @@ dans le robinet suivant:
 
 L'adresse PUBLIQUE commence avec un `0x` et contient des chiffres et des lettres a-f.
 
-Une fois le robinet ouvert, vous attendez quelques minutes pour avoir 0.1 SepETH.
+Une fois le robinet ouvert, vous attendez quelques minutes pour avoir 0.5 SepETH.
 C'est suffisant pour le moment.
 Quand le montant est atteint, cliquez sur "Stop Mining", puis "Claim Rewards" et attendez que vos jetons
 se trouvent sur votre compte.
@@ -226,7 +226,8 @@ Vous pouvez faire un test pour voir si tout a bien fonctionné en lançant la co
 suivante:
 
 ```bash
-./brownie.sh run test_env.py check
+# Ceci coûte à peu près 0.007 SepoliaETH
+./brownie.sh run test_env.py
 ```
 
 Le test devrait prendre autour de 30 seconds et il va vous côuter quelques jetons.
