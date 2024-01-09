@@ -1,4 +1,8 @@
-from brownie import SismondiNFT, network, config, accounts
+from brownie import SismondiNFT, network, config, accounts, chain
+priority = 5_000_000_000
+network.priority_fee(priority)
+network.max_fee(chain.base_fee + priority)
+
 import logging, sys
 logging.basicConfig(filename='operations.log', encoding='utf-8', level=logging.INFO)
 

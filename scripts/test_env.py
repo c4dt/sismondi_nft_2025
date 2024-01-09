@@ -1,5 +1,9 @@
-from brownie import HelloWorld, network, config, accounts
-import logging, sys
+from brownie import HelloWorld, network, config, accounts, chain
+priority = 5_000_000_000
+network.priority_fee(priority)
+network.max_fee(chain.base_fee + priority)
+
+import logging
 logging.basicConfig(filename='operations.log', encoding='utf-8', level=logging.INFO)
 
 if network.show_active() == "development":
