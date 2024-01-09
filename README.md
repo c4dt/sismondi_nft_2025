@@ -14,62 +14,55 @@ Après-midi:
 - présentation de Linus Gasser sur les NFTs
 - exercices sur les NFTs en utilisant ce répertoire
 
-## Les transparents
+# 1.1 - Préliminaires
 
-Vous trouvez les transparents de la journée NFT ici: 
-https://docs.google.com/presentation/d/1x2FqWLHjh-F-auDqM0_eJ4Nv5r-jLTy-K3gfAH9umH8/edit?usp=sharing
+On va commencer par s'installer sur l'ordinateur.
+Puis, on va faire un portefeuille pour vos jetons, et commencer
+à remplir le portefeuille.
+Vu que cette opération va prendre pas mal de temps, on y va avant
+d'avoir vu ce que ça fait vraiment.
 
-Pour poser des questions, vous pouvez utiliser le lien que vous voyez au-dessus des slides,
-qui commence avec https://slides.app.goo.gl
+## 1.1.1 - Exercices
 
-Pour échanger des clés publiques dans les exercices suivants, vous pouvez utiliser Chatzy avec le
-mot de passe écrit au tableau:
+Chaque exercice va se poursuivre de la manière suivante:
+
+1. Vous mettez la carte "A l'écoute" sur vos écrans
+2. Linus va vous montrer comment faire la procédure
+3. Vous mettez la carte "Au travail" et exécutez le travail.
+Si vous avez des questions, n'hésitez pas à demander aux assistants.
+4. Une fois que vous avez terminé, mettez la carte "Terminé"
+5. Assurez-vous que tout le monde dans le groupe a bien compris
+6. Si vous voulez aider les autres, mettez la carte "Au partage"
+
+## 1.1.2 - Se connecter à votre compte
+
+Sur la feuille que vous avez reçue, il y a un nom et un mot de passe.
+Utilisez-les pour vous connecter à votre compte.
+Puis cliquez sur "IC-Gymnases".
+
+## 1.1.3 - Fichiers de la journée
+
+Pour retrouver tous les fichiers, ouvrez Firefox et entrez l'adresse
+suivante:
+
+1. Cliquez la grille en bas à gauche, sélectionnez  "Firefox"
+2. Entrez l'adresse go.epfl.ch/sismondi dans la barre de navigation
+3. Scrollez en bas jusqu'au 1.1.4
+
+## 1.1.4 - Questions et discussions
+
+On va utiliser un chat commun entre les étudiants et l'enseignant.
+Pour ceci, connectez-vous au chat en indiquant un pseudonyme et le
+mot de passe que vous trouvez sur le tableau.
+Normalement, vous devriez déjà lire ceci sur github, donc il suffit
+de cliquer sur le lien suivant:
 
 https://www.chatzy.com/78734252296038
 
-# 1.1 - Création d'un portefeuille (wallet)
+## 1.1.5 - Créer un portefeuille (wallet)
 
-## 1.1.1 - Téléchargement du répertoire
-
-Pour commencer, il faut télécharger le répertoire github sur votre ordinateur.
-Suivez ces étapes:
-- connectez-vous sur le compte que vous avez reçu
-- cliquez sur "IC-Gymnases"
-- cliquez la grille en bas à gauche, sélectionnez  "Firefox", et allez sur la page
-https://go.epfl.ch/sismondi
-- cliquez la grille en bas à gauche, sélectionnez "terminal"
-- copiez la commande suivante dans votre terminal - attention, tous les caractères doivent
-être copiés/collés tel quel! Vous pouvez faire un copier/coller depuis Firefox:
-
-```bash
-git clone https://github.com/c4dt/sismondi_nft_2024
-```
-
-Une fois que c'est téléchargé, vous pouvez changer dans ce répertoire avec la commande
-suivante:
-
-```bash
-cd sismondi_nft_2024
-ls
-```
-
-Ceci devrait vous montrer les fichiers dans le répertoire.
-Garder le terminal ouvert, on en aura encore besoin!
-
-## 1.1.2 - Ouverture de Thonny
-
-Pour ouvrir le logiciel Thonny, suivez ces étapes:
-- cliquez sur la grille en bas à gauche, CHERCHEZ "Thonny"
-- vous pouvez déjà ouvrir le fichier `NOTES.md` qui se trouve dans le répertoire
-`sismondi_nft_2024`
-Il faut choisir `all files` en bas à droite du dialogue de fichiers pour voir les fichiers
-qui se terminent en `.md`.
-
-## Le porte-feuille - "the wallet"
-
-Pour finaliser l'expérience avec les NFTs, vous avez besoin d'un portefeuille.
-Ce portefeuille s'appelle "Wallet" en Anglais et contient vos clés privées pour
-la blockchain.
+On verra que les jetons sur la blockchain sont protégés par une "clé privée".
+Cette clé privée est stockée dans un portefeuille, ou "Wallet" en Anglais.
 Ces clés privées sont comme un mot de passe, mais beaucoup plus long, et avec des
 propriétés mathématiques intéressantes pour les blockchains.
 Si quelqu'un réussi à copier vos clés privées, cette personne a le même accès que vous
@@ -90,34 +83,22 @@ Donc, il est impératif de:
 - ne jamais partager sa clé privée
 - ne pas installer des logiciels d'une source douteuse
 
-### 1.1.3 - Installation Metamask
+## 1.1.6 - Installer Metamask
 
 Aller sur le site de Metamask et suivre les instructions d'installation:
 
 [Installer Metamask](https://metamask.io/download/)
 
-Deux choses importantes:
-- écrivez votre mot de passe dans le fichier `NOTES.md` (voir 1.1.2 comment l'ouvrir)
-- sécuriser l'installation
-- copier TOUS LES 12 mots de récupération dans le fichier `NOTES.md`
-- pour confirmer, remplir les espaces vides - ceci est pour vérifier que vous avez bien
+1. On va faire confiance à Firefox pour stocker le mot de passe
+2. Sécurisez l'installation
+3. Copiez TOUS LES 12 mots de récupération dans un éditeur de texte
+4. Pour confirmer, remplissez les espaces vides - ceci est pour vérifier que vous avez bien
 noté votre phrase de récupération
-- après, il faut encore choisir le réseau "Sepolia": cliquer en haut à gauche dans 
- `Ethereum Mainnet`, puis cochez `Show test networks`, ensuite choisir "Sepolia".
+5. Suivez les instructions pour `pin` Metamask
+6. Choisissez le réseau "Sepolia": cliquez en haut à gauche dans 
+ `Ethereum Mainnet`, puis cochez `Show test networks`, ensuite choisissez "Sepolia".
 
-## 1.1.4 - Enregistrer vos clés dans le fichier NOTES.md
-
-Pour vous faciliter la vie, on va copier la clé publique et la clé privée dans le
-fichier `NOTES.md`:
-- recopiez votre adresse PUBLIQUE dans le fichier `NOTES.md`
-- La clé privée est protégée par Metamask:
-  - cliquer sur les trois petits points à droite du nom de votre compte
-  - choisissez "Account details", puis "Show private key"
-  - confirmez avec votre mot de passe
-  - appuyez longuement sur le bouton
-  - copiez/collez la clé privée depuis la fenêtre dans le fichier `.env`
-
-## 1.1.5 - Charger votre portefeuille avec quelques jetons depuis un "robinet"
+## 1.1.7 - Charger votre portefeuille avec quelques jetons depuis un "robinet"
 
 Pour la prochaine étape, vous avez besoin de quelques jetons.
 Les réseaux blockchains de test vous permettent de recevoir des jetons gratuits.
@@ -134,17 +115,17 @@ Une fois le robinet ouvert, on va continuer la présentation.
 Assurez-vous que le "minage" continue en arrière-plan, parce qu'il vous faudra
 1 SepoliaETH pour le reste de la journée.
 
-# 1.2 - Utilisation des jetons
+# 1.2 - Utiliser des jetons
 
 Assurez-vous que vous avez au moins 1 SepoliaETH jusqu'à maintenant.
 Puis continuez sur l'étape suivante.
 
 ## 1.2.1 - Empocher la récompense
 
-Quand le montant est atteint, cliquez sur "Stop Mining", puis "Claim Rewards" et attendez que vos jetons
+Quand le montant est atteint, cliquez sur `Stop Mining`, puis `Claim Rewards` et attendez que vos jetons
 se trouvent sur votre compte.
 
-## 1.2.2 - Vérification de la réception des jetons
+## 1.2.2 - Vérifier la réception des jetons
 
 Maintenant, on va utiliser `Etherscan` pour voir ce qui s'est passé.
 Entrez votre adresse publique sur le site suivant, afin de
@@ -152,25 +133,25 @@ suivre les transactions sur votre compte et depuis votre compte:
 
 [Etherscan](https://sepolia.etherscan.io)
 
-Si vous ne voyez pas votre transaction, assurez-vous que vous êtes bien sur le réseau 
+Si vous ne voyez pas votre transaction, assurez-vous que vous êtes connecté au réseau 
 "Sepolia".
 
-## 1.2.3 - Transfert de jetons
+## 1.2.3 - Transférer des jetons
 
-Pour finir notre matinée, vous allez transférer quelques jetons à vos voisins.
+Pour finir cette partie, vous allez transférer quelques jetons à vos voisins.
 Ne mettez pas trop de jetons, quelque chose comme 0.001 est très bien.
 
-- Demandez à vos voisins leur adresse privée de leur portefeuille
+1. Demandez à vos voisins leur adresse privée de leur portefeuille
   - Assurez-vous qu'ils ne vous la donnent pas! Sinon, vous pouvez créer un
   nouveau portefeuille et transférer tous leurs jetons chez vous!
-- Demandez à vos voisins leur adresse publique de leur portefeuille.
+2. Demandez à vos voisins leur adresse publique de leur portefeuille.
 Vous pouvez utiliser [Chatzy](https://www.chatzy.com/78734252296038)
-- Ouvrez "Metamask" dans Firefox
-- Cliquez sur "Send"
-- Entrez l'adresse que vous avez reçu de vos voisins
-- Entrez 0.001 SepETH et confirmez
+3. Ouvrez "Metamask" dans Firefox
+4. Cliquez sur "Send"
+5. Entrez l'adresse que vous avez reçu de vos voisins
+6. Entrez 0.001 SepETH et confirmez
 
-## 1.2.4 - Visualisation du transfert
+## 1.2.4 - Visualiser le transfert
 
 Utilisez de nouveau [Etherscan](https://sepolia.etherscan.io) pour visualiser
 votre compte.
@@ -189,25 +170,70 @@ Brownie réunit tous les outils nécessaires pour intéragir avec Ethereum:
 Ici, on va configurer cet outil avec la clé privée et un accès supplémentaire nécessaire
 pour le bon fonctionnement.
 
-## 1.3.1 - Créer le fichier `.env`
+## 1.3.1 - Télécharger le répertoire
+
+Pour commencer, il faut télécharger le répertoire github sur votre ordinateur.
+Suivez ces étapes:
+
+1. Cliquez la grille en bas à gauche, sélectionnez "terminal"
+2. Copiez la commande suivante dans votre terminal - attention, tous les caractères doivent
+être copiés/collés tel quel! Vous pouvez faire un copier/coller depuis Firefox:
+
+```bash
+git clone https://github.com/c4dt/sismondi_nft_2024
+```
+
+Une fois que c'est téléchargé, vous pouvez changer dans ce répertoire avec la commande
+suivante:
+
+```bash
+cd sismondi_nft_2024
+ls
+```
+
+Ceci devrait vous montrer les fichiers dans le répertoire.
+Garder le terminal ouvert, on en aura encore besoin!
+
+## 1.3.2 - Ouvrir Thonny
+
+Pour ouvrir le logiciel Thonny, suivez ces étapes:
+1. Cliquez sur la grille en bas à gauche, cherchez "Thonny"
+2. Sélectionnez `all files` en bas à droite du dialogue de fichiers pour voir aussi les fichiers
+qui se terminent en `.md`.
+3. Ouvrez le fichier `NOTES.md` qui se trouve dans le répertoire
+`sismondi_nft_2024`
+
+## 1.3.3 - Remplir le fichier `NOTES.md`
+
+Pour vous faciliter la vie, utilisez le fichier `NOTES.md`:
+1. Copiez la phrase de récupération depuis votre éditeur de texte dans ce fichier
+2. Recopiez votre adresse PUBLIQUE depuis Metamask dans le fichier `NOTES.md`
+3. Faites de même pour la clé privée. Elle est protégée par Metamask:
+  - Cliquez sur les trois petits points à droite du nom de votre compte
+  - Choisissez "Account details", puis "Show private key"
+  - Confirmez avec votre mot de passe
+  - Appuyez longuement sur le bouton
+  - Copiez/collez la clé privée depuis la fenêtre dans le fichier `NOTES.md`
+
+## 1.3.4 - Créer le fichier `.env`
 
 Afin de pouvoir envoyer des commandes à la chaîne de teste "Sepolia", il faut configurer
 le fichier `.env`.
 Le plus simple est de copier le fichier `env.example` dans le fichier `.env`.
 
-- ouvrez le fichier `env.example` avec Thonny (n'oubliez pas d'utiliser `all files`)
-- `Fichier` -> `Enregistrer sous`
-  - changer le nom en `.env`
-  - sélectionnez `all files` en bas à droite
-  - enregistrez avec `OK`
+1. Ouvrez le fichier `env.example` avec Thonny (n'oubliez pas d'utiliser `all files`)
+2. `Fichier` -> `Enregistrer sous`
+3. Changer le nom en `.env`
+4. Sélectionnez `all files` en bas à droite 
+5. Enregistrez avec `OK`
 
-## 1.3.2 - Copier la clé privée
+## 1.3.5 - Copier la clé privée
 
-Maintenant, vous pouvez copier la clé privée dans votre fichier `.env`:
-- `PRIVATE_KEY` se trouve dans votre fichier `NOTES.md` 
-- copiez/collez la clé privée depuis la fenêtre dans le fichier `.env`
+Maintenant, vous pouvez copier la clé privée dans votre fichier `.env`.
+Vous la trouvez dans votre fichier `NOTES.md`.
+Copiez/collez la clé privée dans le fichier `.env`
 
-## 1.3.3 - Ajouter la clé API de Infura
+## 1.3.6 - Enregistrer sur Infura
 
 Pour communiquer avec la blockchain, il vous faut un intermédiaire.
 Ici, on va choisir Infura, et il faut créer un compte.
@@ -219,18 +245,20 @@ et entrez votre nom (vous pouvez mettre n'importe quoi) et votre email.
 Il est important que l'email soit correcte, parce qu'ils vous envoient
 un lien qu'il faut pour confirmer.
 
-Une fois la régistration confirmée, vous pouvez créer une clé d'accès.
+## 1.3.7 - Copier la clé d'accès dans ´.env`
+
+Une fois la régistration confirmée, vous pouvez activer la clé d'accès.
 Cette clé vous permet de vous identifier auprès d'Infura pour créer votre
 contrat.
 
-Cliquez sur `API Keys` en haut, puis choisissez la clé existante
-`My First Key`.
-Dans la page qui s'ouvre, cochez la case `Sepolia` sous `Ethereum`
+1. Cliquez sur `API Keys` en haut
+2. Choisissez la clé existante `My First Key`.
+3. Dans la page qui s'ouvre, cochez la case `Sepolia` sous `Ethereum`
 et appuyez sur `Save Changes`.
-En haut vous trouvez la clé d'accès que vous pouvez Copier/coller dans votre 
-`NOTES.md` et le `.env`.
+4. En haut, vous trouvez la clé d'accès que vous pouvez Copier/coller dans votre 
+`.env`.
 
-## 1.3.4 - Le `.env`
+## 1.3.8 - Le `.env`
 
 Votre `.env` doit maintenant contenir quelque chose comme ça.
 Bien sûr que la clé privée et la clé d'accès auront des valeurs différentes!
@@ -240,16 +268,16 @@ PRIVATE_KEY = 0x41ede96cc603bf0d7a0e0bd67819ebaf5802ae8ea1060a4f6f3d8b9d723a24ea
 WEB3_INFURA_PROJECT_ID = a691dd6311fb41eb6f3d8b9d723a24ea
 ```
 
-## 1.3.5 - Vérifier le `.env`
+## 1.3.9 - Vérifier le `.env`
 
 Faites le test suivant pour voir si tout a bien fonctionné.
 Lancez la commande suivante:
 
 ```bash
-# Ceci coûte à peu près 0.007 SepoliaETH
 ./brownie.sh run test_env.py
 ```
 
+Ceci coûte à peu près 0.007 SepoliaETH.
 Le test devrait prendre autour de 30 seconds et il va vous côuter quelques jetons.
 
 # 2.1 - Configurer le contrat Sismondi_NFT avec vos images
@@ -257,21 +285,27 @@ Le test devrait prendre autour de 30 seconds et il va vous côuter quelques jeto
 Avant d'installer le contrat Sismondi_NFT sur la blockchain, il faut le configurer avec
 vos images.
 Il faut commencer par copier vos images sur l'ordinateur de l'EPFL.
-Puis, il faut transformer les images pour qu'elles soient compatible avec le smart contract.
+Puis, il faut transformer les images pour qu'elles soient compatibles avec le smart contract.
 A la fin, il faut copier les images dans le smart contract.
 
-## 2.1.1 - Préparation des images
+## 2.1.1 - Préparer les images
 
-- Copier les images dans les sous-répertoires de `./images` en remplaçant les images
-qui sont déjà présentes
-- Utiliser le script `./scripts/images.py` en ajoutant les images, y inclus le chemin
-  - Ensuite, vous devez lancer ce script avec la commande `./mk_images.sh` dans le terminal
-- Il y a deux parties qu'il faut copier/coller dans le contrat `./contracts/SismondiNFT.sol`:
+1. Copier les images dans les sous-répertoires de `./images` en remplaçant les images
+qui y sont déjà présentes
+2. Ouvrez le fichier `./scripts/images.py`
+3. Modifiez le nom des fichiers - faites attention au chemin d'accès
+4. Lancez le script dans le terminal:
+
+```bash
+./mk_images.sh
+```
+
+5. Il y a deux parties qu'il faut copier/coller dans le contrat `./contracts/SismondiNFT.sol`:
   - La partie `Prefix` doit suivre la déclaration d'`images_prefix`. 
   Ne pas oublier le `;` à la fin!
   - Les valeurs après le `Images are:` doivent remplacer ceux actuellement dans le
   tableau de `images`
-- Vous pouvez aussi modifier la liste des mots qui est utilisé pour nommer vos NFTs.
+6. Vous pouvez aussi modifier la liste des mots qui est utilisé pour nommer vos NFTs.
 Essayez de montrer de la maturité dans le choix de vos mots...
 
 Chaque NFT se verra attribuer aléatoirement une des images et aussi aléatoirement un des
@@ -321,18 +355,14 @@ Terminating local RPC client...
 
 Ce qui est le plus important, c'est le dernier long numéro, dans notre cas le
 `0x3194cBDC3dbcd3E11a07892e7bA5c3394048Cc87`.
-C'est l'adresse de votre contrat sur la blockchain!
-Copiez cette adresse dans le fichier NOTES.md!
+C'est l'adresse de votre contrat sur la blockchain.
+Copiez cette adresse dans le fichier NOTES.md.
 
-Note 1: cette commande va automatiquement compiler votre contrat `SismondiNFT.sol`.
-Ça veut dire que vous pouvez changer le contrat dans votre éditeur, et puis directement
-l'installer sur la blockchain.
-
-Note 2: vous trouvez tous les messages dans le fichier `operations.log`.
+Vous trouvez tous les messages d'exécution dans le fichier `operations.log`.
 Donc si vous avez oublié l'adresse de votre contrat, vous pouvez y jeter un coup
 d'œil.
 
-## 2.1.4 - Vérifier l'installation
+## 2.1.4 - Vérifier l'installation du contrat
 
 Avec l'aide de l'outil [Etherscan](https://sepolia.etherscan.io), vous pouvez maintenant
 vérifier que votre contrat est bel et bien installé sur la chaîne.
@@ -373,9 +403,14 @@ créé par ce contrat.
 
 ## 2.2.2 - Vérifier sur Etherscan
 
+Allez regarder de nouveau sur Etherscan l'adresse de votre smart contract et vérifiez
+qu'il y a bien une deuxième transaction.
+Vous pouvez aussi cliquer sur le `Token Tracker` pour voir combien de NFTs ont
+été émis.
+
 ## 2.2.3 - Minter un NFT d'un autre groupe
 
-Vous pouvez prendre l'adresse d'un contrat d'un autre groupe, afin de faire
+Prenez l'adresse d'un contrat d'un autre groupe, afin de faire
 du mint sur leur contrat à eux.
 Quand ils vous donnent leur adresse, il faut d'abord vérifier que c'est bien
 un contrat de mintage, à l'aide de [Etherscan](https://sepolia.etherscan.io).
@@ -384,11 +419,7 @@ Si ce n'est pas le cas, ça peut être à cause de:
 - une erreur dans la transmission de l'adresse
 - que l'autre groupe n'a pas encore fait un premier mint
 
-## Utilisation des NFTs
-
-On va commencer par visualiser le NFTs qu'on vient de créer. 
-
-## 2.2.4 - Suivi dans OpenSea
+## 2.2.4 - Visualiser dans OpenSea
 
 La visualisation avec le site OpenSea est possible même sans inscription.
 Allez sur le site ici:
@@ -398,20 +429,20 @@ Allez sur le site ici:
 et entrez l'adresse de votre contrat NFT en haut dans la barre de recherche.
 Si vous avez déjà minté un NFT, il devrait s'afficher ici.
 
-## 2.2.5 - Ajout au portefeuille Metamask
+## 2.2.5 - Ajouter au portefeuille Metamask
 
 Afin de transmettre le NFT, on peut utiliser Metamask:
-- dans votre page de Metamask, cliquez sur `NFTs`, puis sur `Import NFT`
-- ajoutez l'adresse de votre contrat, ainsi que le `id` de votre NFT
+1. Dans votre page de Metamask, cliquez sur `NFTs`, puis sur `Import NFT`
+2. Ajoutez l'adresse de votre contrat, ainsi que le `id` de votre NFT
 
 Vous ne pouvez pas ajouter un NFT que vous n'avez pas minté!
 
-## 2.2.6 - Envoi vers d'autres utilisateurs
+## 2.2.6 - Envoyer vers d'autres utilisateurs
 
 Pour envoyer votre NFT vers un autre utilisateur, vous devez d'abord
 ajouter le NFT comme dans la section précédente.
-Maintenant vous pouvez cliquer sur le NFT, et choisir `Send`.
-On vous demande maintenant l'adresse du destinataire.
+Maintenant, vous pouvez cliquer sur le NFT, et choisir `Send`.
+On vous demande l'adresse du destinataire.
 
 ATTENTION: une fois envoyé, il n'est pas possible de récupérer le NFT!
 Donc si vous envoyez à une mauvaise adresse, le NFT est perdu!
