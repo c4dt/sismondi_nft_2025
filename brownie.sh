@@ -16,6 +16,7 @@ if [[ ! -f $UPDATED ]]; then
   if [[ ! -d ~/.solcx && $( uname -m ) = "x86_64" ]]; then
     mkdir ~/.solcx
     curl https://drive.switch.ch/index.php/s/ymTNyKzJ2gigOPU/download > ~/.solcx/solc-v0.8.23
+    chmod a+x ~/.solcx/*
   fi
   brownie_wrap networks import scripts/sepolia.network
   touch $UPDATED

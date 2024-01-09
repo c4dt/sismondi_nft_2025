@@ -14,14 +14,6 @@ avec un triple-clic, vous sélectionnez toute la ligne!
 - clé privée du wallet
 
 
-## 1.2 - minter quelques jetons
-
-- clé publique du wallet
-  - du groupe
-
-  - d'un autre groupe
-
-
 ## 2.1 - installer un contrat sur la blockchain
 
 - adresse du smart contrat du groupe
