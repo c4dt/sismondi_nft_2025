@@ -117,13 +117,11 @@ fichier `NOTES.md`:
   - appuyez longuement sur le bouton
   - copiez/collez la clé privée depuis la fenêtre dans le fichier `.env`
 
-# 1.1.5 - Charger votre portefeuille avec quelques jetons
+## 1.1.5 - Charger votre portefeuille avec quelques jetons depuis un "robinet"
 
 Pour la prochaine étape, vous avez besoin de quelques jetons.
 Les réseaux blockchains de test vous permettent de recevoir des jetons gratuits.
 Bien sûr que vous ne pouvez pas revendre ces jetons, ils ne valent rien.
-
-## 1.1.6 - Utiliser un "robinet" pour les jetons
 
 Afin de recevoir quelques jetons, vous pouvez copier votre adresse depuis Metamask
 dans le robinet suivant:
@@ -244,8 +242,8 @@ WEB3_INFURA_PROJECT_ID = a691dd6311fb41eb6f3d8b9d723a24ea
 
 ## 1.3.5 - Vérifier le `.env`
 
-Vous pouvez faire un test pour voir si tout a bien fonctionné en lançant la commande
-suivante:
+Faites le test suivant pour voir si tout a bien fonctionné.
+Lancez la commande suivante:
 
 ```bash
 # Ceci coûte à peu près 0.007 SepoliaETH
@@ -264,12 +262,10 @@ A la fin, il faut copier les images dans le smart contract.
 
 ## 2.1.1 - Préparation des images
 
-- Copier les images dans les sous-répertoires de [./images] en remplaçant les images
+- Copier les images dans les sous-répertoires de `./images` en remplaçant les images
 qui sont déjà présentes
-- Utiliser le script [./scripts/images.py] en ajoutant les images, y inclus le chemin
-  - Avec Thonny, vous pouvez lancer `images.py` et voir la sortie 
-  - Si vous avez de la peine avec les versions python, vous pouvez lancer ce script 
-  avec la commande `./mk_images.sh`
+- Utiliser le script `./scripts/images.py` en ajoutant les images, y inclus le chemin
+  - Ensuite, vous devez lancer ce script avec la commande `./mk_images.sh` dans le terminal
 - Il y a deux parties qu'il faut copier/coller dans le contrat `./contracts/SismondiNFT.sol`:
   - La partie `Prefix` doit suivre la déclaration d'`images_prefix`. 
   Ne pas oublier le `;` à la fin!
