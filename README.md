@@ -45,7 +45,7 @@ Puis cliquez sur "IC-Gymnases".
 Pour retrouver tous les fichiers, ouvrez Firefox et entrez l'adresse
 suivante:
 
-1. Cliquez la grille en bas à gauche, sélectionnez  "Firefox"
+1. Cliquez la grille en bas à gauche, sélectionnez "Firefox"
 2. Entrez l'adresse go.epfl.ch/sismondi dans la barre de navigation
 3. Scrollez en bas jusqu'au 1.1.4
 
@@ -145,7 +145,7 @@ Ne mettez pas trop de jetons, quelque chose comme 0.001 est très bien.
   - Assurez-vous qu'ils ne vous la donnent pas! Sinon, vous pouvez créer un
   nouveau portefeuille et transférer tous leurs jetons chez vous!
 2. Demandez à vos voisins leur adresse publique de leur portefeuille.
-Vous pouvez utiliser [Chatzy](https://www.chatzy.com/78734252296038)
+Vous pouvez utiliser "Chatzy"
 3. Ouvrez "Metamask" dans Firefox
 4. Cliquez sur "Send"
 5. Entrez l'adresse que vous avez reçu de vos voisins
@@ -226,6 +226,11 @@ Le plus simple est de copier le fichier `env.example` dans le fichier `.env`.
 3. Changer le nom en `.env`
 4. Sélectionnez `all files` en bas à droite 
 5. Enregistrez avec `OK`
+6. Vérifiez dans le terminal en lançant la commande suivante:
+
+```bash
+cat .env
+```
 
 ## 1.3.5 - Copier la clé privée
 
@@ -258,8 +263,6 @@ et appuyez sur `Save Changes`.
 4. En haut, vous trouvez la clé d'accès que vous pouvez Copier/coller dans votre 
 `.env`.
 
-## 1.3.8 - Le `.env`
-
 Votre `.env` doit maintenant contenir quelque chose comme ça.
 Bien sûr que la clé privée et la clé d'accès auront des valeurs différentes!
 
@@ -268,7 +271,7 @@ PRIVATE_KEY = 0x41ede96cc603bf0d7a0e0bd67819ebaf5802ae8ea1060a4f6f3d8b9d723a24ea
 WEB3_INFURA_PROJECT_ID = a691dd6311fb41eb6f3d8b9d723a24ea
 ```
 
-## 1.3.9 - Vérifier le `.env`
+## 1.3.8 - Vérifier le `.env`
 
 Faites le test suivant pour voir si tout a bien fonctionné.
 Lancez la commande suivante:
@@ -412,6 +415,7 @@ Vous pouvez aussi cliquer sur le `Token Tracker` pour voir combien de NFTs ont
 
 Prenez l'adresse d'un contrat d'un autre groupe, afin de faire
 du mint sur leur contrat à eux.
+Vous pouvez utiliser "Chatzy" pour échanger les adresses.
 Quand ils vous donnent leur adresse, il faut d'abord vérifier que c'est bien
 un contrat de mintage, à l'aide de [Etherscan](https://sepolia.etherscan.io).
 Dans la partie `More Info`, il faudrait une mention de `Token Tracker`.

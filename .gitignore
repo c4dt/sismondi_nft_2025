@@ -5,4 +5,4 @@ build/
 reports/
 .env
 operations.log
-.idea
+.idea.updated
