@@ -8,14 +8,17 @@ if network.show_active() == "development":
 else:
     account = accounts.add(config["wallets"]["from_key"])
 
+dev_net = False
+
 def log(txt):
     print(txt)
     logging.info(txt)
 
 def fast_transaction():
-    priority = 5_000_000_000
-    network.priority_fee(priority)
-    network.max_fee(chain.base_fee + priority)
+    if not dev_net:
+        priority = 5_000_000_000
+        network.priority_fee(priority)
+        network.max_fee(chain.base_fee + priority)
 
 def deploy():
     fast_transaction()
@@ -35,6 +38,8 @@ def mint(addr):
     return nft
 
 def deploy_mint():
+    global dev_net
+    dev_net = True
     contract = deploy()
     print("\n---\n")
     nft = mint(contract.address)
