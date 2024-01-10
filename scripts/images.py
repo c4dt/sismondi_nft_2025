@@ -60,7 +60,18 @@ for background in backgrounds:
 
 
 prefix, images_short = get_common(images_long)
-print("Prefix is:")
-print(prefix)
-print("Images are:")
-print(",\n".join(images_short))
+
+nft_parts_prefix = os.path.join(os.path.dirname(__file__), "SismondiNFT_")
+with open(os.path.join(image_dir, "..", "contracts", "SismondiNFT.sol"), "w") as nft:
+    with open(f"{nft_parts_prefix}1.sol") as pre:
+        nft.write(pre.read())
+
+    nft.write(prefix)
+    with open(f"{nft_parts_prefix}2.sol") as middle:
+        nft.write(middle.read())
+
+    nft.write(",\n".join(images_short))
+    with open(f"{nft_parts_prefix}3.sol") as end:
+        nft.write(end.read())
+
+print("../contracts/SismondiNFT.sol has been rewritten.")

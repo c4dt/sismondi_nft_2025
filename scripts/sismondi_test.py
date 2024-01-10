@@ -1,7 +1,4 @@
 from brownie import SismondiNFT, network, config, accounts, chain
-priority = 5_000_000_000
-network.priority_fee(priority)
-network.max_fee(chain.base_fee + priority)
 
 import logging, sys
 logging.basicConfig(filename='operations.log', encoding='utf-8', level=logging.INFO)
@@ -30,15 +27,9 @@ def mint(addr):
     log(f"A new NFT with id {nft_id} has been successfully created in block {nft.block_number} with transaction {nft.txid}")
     return nft
 
-def deploy_mint():
+def main():
     contract = deploy()
     print("\n---\n")
     nft = mint(contract.address)
     print("\n---\n")
     nft = mint(contract.address)
-
-def main():
-    print("Please choose one of the following actions:")
-    print("deploy - a new contract. Add --network development to deploy on local development network")
-    print("mint #contractid - mints a new NFT. It prints the id of the NFT")
-    sys.exit(1)
