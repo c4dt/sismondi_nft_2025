@@ -297,17 +297,13 @@ A la fin, il faut copier les images dans le smart contract.
 qui y sont déjà présentes
 2. Ouvrez le fichier `./scripts/images.py`
 3. Modifiez le nom des fichiers - faites attention au chemin d'accès
-4. Lancez le script dans le terminal:
+4. Lancez le script dans le terminal qui va créer le contrat `./contracts/SismondiNFT.sol`:
 
 ```bash
-./mk_images.sh
+./mk_contract.sh
 ```
 
-5. Il y a deux parties qu'il faut copier/coller dans le contrat `./contracts/SismondiNFT.sol`:
-  - La partie `Prefix` doit suivre la déclaration d'`images_prefix`. 
-  Ne pas oublier le `;` à la fin!
-  - Les valeurs après le `Images are:` doivent remplacer ceux actuellement dans le
-  tableau de `images`
+5. Vérifiez que les images résultantes sont bonnes en visualisant le répertoire `./images/results`
 6. Vous pouvez aussi modifier la liste des mots qui est utilisé pour nommer vos NFTs.
 Essayez de montrer de la maturité dans le choix de vos mots...
 
@@ -323,7 +319,7 @@ dans le contrat.
 Lancez la commande suivante:
 
 ```bash
-./brownie.sh run sismondi.py deploy_mint --network development
+./brownie.sh run sismondi_test.py --network development
 ```
 
 Si tout va bien, vous devriez voir un total de 3 blocs:
