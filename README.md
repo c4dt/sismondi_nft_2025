@@ -306,6 +306,12 @@ Si tout va bien, vous devriez voir un total de 3 blocs:
 - block 1: mint d'un premier NFT
 - block 2: mint d'un deuxième NFT
 
+Il se peut qu'il y a une erreur qui se termine avec
+
+`Terminating local RPC client`
+
+Ce n'est pas grave, si ou moins, il y a trois blocs qui s'affichent.
+
 ## 2.1.3 - Installer le contrat sur le réseau de test Sepolia
 
 Maintenant que vous avez mis à jour le contrat `SismondiNFT.sol`, et que vous
