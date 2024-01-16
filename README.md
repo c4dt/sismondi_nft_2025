@@ -3,63 +3,37 @@
 Ce répertoire contient la démo pour la semaine des étudiants du gymnase Sismondi.
 Pendant cette semaine, les étudiants vont passer une journée à l'EPFL pour apprendre
 plus sur les blockchains et les NFTs.
-Le programme de la journée est le suivant:
 
-Matin:
-- présentation de Mme Zürcher
-- présentation de Linus Gasser sur les blockchains
-- exercices pour se familiariser avec les outils nécessaires pour la suite
+Transparents de la journée: [Blockchains et NFTs](https://docs.google.com/presentation/d/1x2FqWLHjh-F-auDqM0_eJ4Nv5r-jLTy-K3gfAH9umH8/edit?usp=sharing)
 
-Après-midi:
-- présentation de Linus Gasser sur les NFTs
-- exercices sur les NFTs en utilisant ce répertoire
+# 0 - Installation
+
+Le code original a été préparé pour être utilisé dans des machines virtuelles
+Linux.
+Pour une utilisation plus simple, le code a été re-écrit pour être utilisé
+avec Docker.
+Si vous voulez suivre les exercices proposés ici, il vous faudra donc installer
+Docker:
+
+[Installation Docker](https://docs.docker.com/engine/install/)
+
+Pour éditer le code vous pouvez utiliser n'importe quel editeur de code.
+Je vous suggère d'utiliser Visual Studio Code:
+
+[Installation Visual Studio Code](https://code.visualstudio.com/download)
+
+Il faut installer les extensions suivantes:
+- `Solidity` pour le smart contract
+- `Python` pour changer la création du smart contrat
 
 # 1.1 - Mise en place
 
-On va commencer par s'installer sur l'ordinateur.
 Puis, on va faire un portefeuille pour vos jetons, et commencer
 à remplir le portefeuille.
 Vu que cette opération va prendre pas mal de temps, on y va avant
 d'avoir vu ce que ça fait vraiment.
 
-## 1.1.1 - Exercices
-
-Chaque exercice va se poursuivre de la manière suivante:
-
-1. Vous mettez la carte "A l'écoute" sur vos écrans
-2. Linus va vous montrer comment faire la procédure
-3. Vous mettez la carte "Au travail" et exécutez le travail.
-Si vous avez des questions, n'hésitez pas à demander aux assistants.
-4. Une fois que vous avez terminé, mettez la carte "Terminé"
-5. Assurez-vous que tout le monde dans le groupe a bien compris
-6. Si vous voulez aider les autres, mettez la carte "Au partage"
-
-## 1.1.2 - Se connecter à votre compte
-
-Sur la feuille que vous avez reçue, il y a un nom et un mot de passe.
-Utilisez-les pour vous connecter à votre compte.
-Puis cliquez sur "IC-Gymnases".
-
-## 1.1.3 - Fichiers et liens de la journée
-
-Pour retrouver tous les fichiers et liens, ouvrez Firefox et entrez l'adresse
-suivante:
-
-1. Cliquez la grille en bas à gauche, sélectionnez "Firefox"
-2. Entrez l'adresse go.epfl.ch/sismondi dans la barre de navigation
-3. Scrollez en bas jusqu'au 1.1.4
-
-## 1.1.4 - Questions et discussions
-
-On va utiliser un chat commun entre les étudiants et l'enseignant.
-Pour ceci, connectez-vous au chat en indiquant un pseudonyme et le
-mot de passe que vous trouvez sur le tableau.
-Normalement, vous devriez déjà lire ceci sur github, donc il suffit
-de cliquer sur le lien suivant:
-
-https://www.chatzy.com/78734252296038
-
-## 1.1.5 - Créer un portefeuille (wallet)
+## 1.1.1 - Créer un portefeuille (wallet)
 
 On verra que les jetons sur la blockchain sont protégés par une "clé privée".
 Cette clé privée est stockée dans un portefeuille, ou "Wallet" en Anglais.
@@ -83,7 +57,7 @@ Donc, il est impératif de:
 - ne jamais partager sa clé privée
 - ne pas installer des logiciels d'une source douteuse
 
-## 1.1.6 - Installer Metamask
+## 1.1.2 - Installer Metamask
 
 Aller sur le site de Metamask et suivre les instructions d'installation:
 
@@ -98,7 +72,7 @@ noté votre phrase de récupération
 6. Choisissez le réseau "Sepolia": cliquez en haut à gauche dans 
  `Ethereum Mainnet`, puis cochez `Show test networks`, ensuite choisissez "Sepolia".
 
-## 1.1.7 - Charger votre portefeuille avec quelques jetons depuis un "robinet"
+## 1.1.3 - Charger votre portefeuille avec quelques jetons depuis un "robinet"
 
 Pour la prochaine étape, vous avez besoin de quelques jetons.
 Les réseaux blockchains de test vous permettent de recevoir des jetons gratuits.
@@ -175,7 +149,9 @@ pour le bon fonctionnement.
 Pour commencer, il faut télécharger le répertoire github sur votre ordinateur.
 Suivez ces étapes:
 
-1. Cliquez la grille en bas à gauche, sélectionnez "terminal"
+1. Ouvrez un terminal de commande sur votre ordinateur
+   a. Pour Linux et MacOS, c'est simple. Pour Windows, il faut s'assurer que c'est
+    un terminal du WSL: https://learn.microsoft.com/en-us/windows/wsl/install
 2. Copiez la commande suivante dans votre terminal - attention, tous les caractères doivent
 être copiés/collés tel quel! Vous pouvez faire un copier/coller depuis Firefox:
 
@@ -194,18 +170,11 @@ ls
 Ceci devrait vous montrer les fichiers dans le répertoire.
 Garder le terminal ouvert, on en aura encore besoin!
 
-## 1.3.2 - Ouvrir Thonny
+## 1.3.2 - Ouvrir avec Visual Studio Code
 
-Pour ouvrir le logiciel Thonny, suivez ces étapes:
-1. Cliquez sur la grille en bas à gauche, cherchez "Thonny"
-2. Sélectionnez `all files` en bas à droite du dialogue de fichiers pour voir aussi les fichiers
-qui se terminent en `.md`.
-3. Ouvrez le fichier `NOTES.md` qui se trouve dans le répertoire
-`sismondi_nft_2024`
+Ouvrez maintenant le fichier `NOTES.md` dans Visual Studio Code (VSCode) et commencez
+à le remplir:
 
-## 1.3.3 - Remplir le fichier `NOTES.md`
-
-Pour vous faciliter la vie, utilisez le fichier `NOTES.md`:
 1. Copiez la phrase de récupération depuis votre éditeur de texte dans ce fichier
 2. Recopiez votre adresse PUBLIQUE depuis Metamask dans le fichier `NOTES.md`
 3. Faites de même pour la clé privée. Elle est protégée par Metamask:
@@ -215,18 +184,18 @@ Pour vous faciliter la vie, utilisez le fichier `NOTES.md`:
   - Appuyez longuement sur le bouton
   - Copiez/collez la clé privée depuis la fenêtre dans le fichier `NOTES.md`
 
-## 1.3.4 - Créer le fichier `.env`
+## 1.3.3 - Créer le fichier `.env`
 
 Afin de pouvoir envoyer des commandes à la chaîne de teste "Sepolia", il faut configurer
 le fichier `.env`.
 Le plus simple est de copier le fichier `env.example` dans le fichier `.env`.
 
-1. Ouvrez le fichier `env.example` avec Thonny (n'oubliez pas d'utiliser `all files`)
+1. Ouvrez le fichier `env.example` avec VSCode
 2. `Fichier` -> `Enregistrer sous`
 3. Changer le nom en `.env`
-4. Sélectionnez `all files` en bas à droite 
-5. Enregistrez avec `OK`
-6. Vérifiez dans le terminal en lançant la commande suivante:
+4. Enregistrez avec `OK`
+5. Confirmer que vous voulez faire un fichier caché
+6. Vérifiez dans le terminal que le fichier s'affiche en lançant la commande suivante:
 
 ```bash
 cat .env
@@ -291,13 +260,23 @@ Il faut commencer par copier vos images sur l'ordinateur de l'EPFL.
 Puis, il faut transformer les images pour qu'elles soient compatibles avec le smart contract.
 A la fin, il faut copier les images dans le smart contract.
 
+Il y a trois types d'images, avec deux versions pour chaque type:
+1. Background (fond) qui peut être une image simple
+2. Shoe (chaussure) qui représente la chaussure, mais avec un **arrière-plan transparent**
+3. Sole (semelle) qui représente la semelle, mais avec un **arrière-plan transparent**
+
+Toutes les six images doivent avoir la même dimension!
+Et les images de la chaussure et de la semelle doivent être transparent en-dehors de là
+où il y a le contenu.
+Vous trouvez un exemple dans le dossier [images](./images).
+
 ## 2.1.1 - Préparer les images
 
 1. Copier les images dans les sous-répertoires de `./images` en remplaçant les images
 qui y sont déjà présentes
 2. Ouvrez le fichier `./scripts/images.py`
 3. Modifiez le nom des fichiers - faites attention au chemin d'accès
-4. Lancez le script dans le terminal qui va créer le contrat `./contracts/SismondiNFT.sol`:
+4. Lancez le script suivant dans le terminal qui va créer le contrat `./contracts/SismondiNFT.sol`:
 
 ```bash
 ./mk_contract.sh
@@ -446,6 +425,12 @@ On vous demande l'adresse du destinataire.
 
 ATTENTION: une fois envoyé, il n'est pas possible de récupérer le NFT!
 Donc si vous envoyez à une mauvaise adresse, le NFT est perdu!
+
+# Questions et retour
+
+Si vous avez des questions ou des retours, n'hésitez pas d'entrer en contact avec nous:
+
+[factory@c4dt.org](mailto:factory@c4dt.org)
 
 # Documentation
 
