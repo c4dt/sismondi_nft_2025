@@ -119,7 +119,7 @@ Ne mettez pas trop de jetons, quelque chose comme 0.01 est très bien.
   - Assurez-vous qu'ils ne vous la donnent pas! Sinon, vous pouvez créer un
   nouveau portefeuille et transférer tous leurs jetons chez vous!
 2. Demandez à vos voisins leur adresse publique de leur portefeuille.
-Vous pouvez utiliser "Chatzy"
+Vous pouvez utiliser "Discord"
 3. Ouvrez "Metamask" dans Firefox
 4. Cliquez sur "Send"
 5. Entrez l'adresse que vous avez reçu de vos voisins
@@ -270,7 +270,7 @@ dans le contrat.
 Lancez la commande suivante:
 
 ```bash
-./brownie.sh run sismondi_test.py --network development
+./brownie.sh run sismondi.py deploy_mint --network development
 ```
 
 Si tout va bien, vous devriez voir un total de 3 blocs:
@@ -292,6 +292,7 @@ Pour installer votre contrat `SismondiNFT.sol` sur la chaîne, vous pouvez
 lancer la commande suivante:
 
 ```bash
+# ATTENTION: SEULEMENT DEPLOY, PAS DEPLOY_MINT!
 ./brownie.sh run sismondi.py deploy
 ```
 
@@ -368,7 +369,7 @@ Vous pouvez aussi cliquer sur le `Token Tracker` pour voir combien de NFTs ont
 
 Prenez l'adresse d'un contrat d'un autre groupe, afin de faire
 du mint sur leur contrat à eux.
-Vous pouvez utiliser "Chatzy" pour échanger les adresses.
+Vous pouvez utiliser "Discord" pour échanger les adresses.
 Quand ils vous donnent leur adresse, il faut d'abord vérifier que c'est bien
 un contrat de mintage, à l'aide de [Etherscan](https://sepolia.etherscan.io).
 Dans la partie `More Info`, il faudrait une mention de `Token Tracker`.
@@ -383,7 +384,7 @@ Allez sur le site ici:
 
 [OpenSea](https://testnets.opensea.io)
 
-et entrez l'adresse de votre contrat NFT en haut dans la barre de recherche.
+Et entrez l'adresse publique de votre compte Metamask.
 Si vous avez déjà minté un NFT, il devrait s'afficher ici.
 
 ## 2.2.5 - Ajouter au portefeuille Metamask
@@ -412,7 +413,8 @@ Si vous avez des questions ou des retours, n'hésitez pas d'entrer en contact av
 
 # Documentation
 
-- Transparents de la journée: [Blockchains et NFTs](https://docs.google.com/presentation/d/1x2FqWLHjh-F-auDqM0_eJ4Nv5r-jLTy-K3gfAH9umH8/edit?usp=sharing)
+- Transparents de la journée: [Blockchains et NFTs](https://docs.google.com/presentation/d/1GHKlwuN6LUVZVcbl2MUnpxUkTPp4grPANSJSazv6McE/edit?usp=sharing)
+- Exercices de la journée: [Exercices NFTs](https://docs.google.com/presentation/d/1tVdxSfuAkHaKnPkzlBHLCevrtSibBkfaCo6H3vb3Jww/edit?usp=sharing)
 - Howto qui a été utilisé pour préparer la journée: [Deploy Your First NFT With Python](https://www.codeforests.com/2022/01/14/deploy-your-first-nft-with-python/) - 
     [Github with contract](https://github.com/codeforests/brownie_legendnft) 
 - Contract utilisé pour le NFT: [openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master) 

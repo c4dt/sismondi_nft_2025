@@ -27,14 +27,15 @@ def create_composite_image(file_paths, width, height, output_width, index):
     resized_composite = composite.resize((output_width, new_height))
     results_dir = os.path.join(image_dir, "results")
     os.makedirs(results_dir, exist_ok=True)
-    resized_composite.save(os.path.join(results_dir, f"composite_{index}.png"))
+    resized_jpg = resized_composite.convert('RGB')
+    resized_jpg.save(os.path.join(results_dir, f"composite_{index}.jpg"))
 
     # Convert the image to base64
     buffered = io.BytesIO()
-    resized_composite.save(buffered, format="PNG")
+    resized_jpg.save(buffered, format="JPEG")
     img_str_base64 = base64.b64encode(buffered.getvalue())
 
-    return f"data:image/png;base64,{img_str_base64.decode()}"
+    return f"data:image/jpeg;base64,{img_str_base64.decode()}"
 
 
 def get_common(images):
@@ -43,13 +44,19 @@ def get_common(images):
     return pre + '"', remaining_parts
 
 
-def get_image_strings(background_names, shoe_names, sole_names):
+# max_size will influence how big the final contract is and how much it costs to deploy and mint:
+# The gas prices vary a lot depending on how busy the test network is, and how big the images are.
+# For the test images, the following values can be considered:
+# 128 - deploy: 0.38 - mint: 0.09
+# 80 - deploy: 0.26 - mint: 0.07
+# 30 - deploy: 0,1 - mint: 0.03
+#
+# Just for reference, on the same day, but in the afternoon, the prices were as following:
+# 64 - deploy: 1.60 - mint: 0.46
+def get_image_strings(background_names, shoe_names, sole_names, max_size = 64):
     image_names = list(itertools.chain.from_iterable([background_names, shoe_names, sole_names]))
     width, height = calc_min_dimensions(image_names)
     print(f"Resizing all images to width={width}, height={height}")
-    # Uncomment the following lines to set the width and height to a given value
-    # width = 320
-    # height = 240
 
     # For-loop with all combinations of backgrounds / shoe / sole
     images_long = []
@@ -57,7 +64,7 @@ def get_image_strings(background_names, shoe_names, sole_names):
     for background in background_names:
         for shoe in shoe_names:
             for sole in sole_names:
-                img_str = create_composite_image([background, shoe, sole], width, height, 30, index)
+                img_str = create_composite_image([background, shoe, sole], width, height, max_size, index)
                 images_long.append(f"\"{img_str}\"")
                 index += 1
 

@@ -1,19 +1,5 @@
-from brownie import HelloWorld, network, config, accounts, chain
-priority = 5_000_000_000
-network.priority_fee(priority)
-network.max_fee(chain.base_fee + priority)
-
-import logging
-logging.basicConfig(filename='operations.log', encoding='utf-8', level=logging.INFO)
-
-if network.show_active() == "development":
-    account = accounts[0]
-else:
-    account = accounts.add(config["wallets"]["from_key"])
-
-def log(txt):
-    print(txt)
-    logging.info(txt)
+from brownie import HelloWorld, network, config
+from .common import account, log, log_cost
 
 def deploy():
     hello_world = HelloWorld.deploy(
@@ -21,7 +7,8 @@ def deploy():
         {"from": account},
         publish_source=config["networks"][network.show_active()].get("verify")
     )
-    log(f"contract has been deployed successfully to : {hello_world.address}")
+    log(f"Contract has been deployed successfully to : {hello_world.address}")
+    log_cost(hello_world.tx)
     return hello_world
 
 def msg(addr):

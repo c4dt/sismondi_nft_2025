@@ -6,5 +6,3 @@ live:
         id: sepolia
         host: https://ethereum-sepolia-rpc.publicnode.com
         explorer: https://api-sepolia.etherscan.io/api
-        multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696"
-        provider: infura
