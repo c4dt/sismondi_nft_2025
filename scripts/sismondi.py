@@ -2,8 +2,8 @@ from brownie import SismondiNFT, network, config
 from .common import account, log, log_cost, check_gas
 
 import sys
-def deploy():
-    check_gas()
+def deploy(nowait=False):
+    check_gas(nowait)
     sismondi_contract = SismondiNFT.deploy(
         {"from": account},
         publish_source=config["networks"][network.show_active()].get("verify")
@@ -12,8 +12,8 @@ def deploy():
     log_cost(sismondi_contract.tx)
     return sismondi_contract
 
-def mint(addr):
-    check_gas()
+def mint(addr, nowait = False):
+    check_gas(nowait)
     sismondi_contract = SismondiNFT.at(addr)
     nft = sismondi_contract.makeSismondiNFT({'from': account})
     nft_id = nft.events['NewSismondiNFTMinted']['tokenId']
@@ -21,12 +21,12 @@ def mint(addr):
     log_cost(nft)
     return nft
 
-def deploy_mint():
-    contract = deploy()
+def deploy_mint(nowait = False):
+    contract = deploy(nowait)
     print("\n---\n")
-    nft = mint(contract.address)
+    nft = mint(contract.address, nowait)
     print("\n---\n")
-    nft = mint(contract.address)
+    nft = mint(contract.address, nowait)
 
 def main():
     print("Please choose one of the following actions:")

@@ -1,8 +1,8 @@
 from brownie import HelloWorld, network, config
 from .common import account, log, log_cost, check_gas
 
-def deploy():
-    check_gas()
+def deploy(nowait = False):
+    check_gas(nowait)
     hello_world = HelloWorld.deploy(
         "Welcome to EPFL",
         {"from": account},
