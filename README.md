@@ -156,14 +156,14 @@ Suivez ces étapes:
 être copiés/collés tel quel! Vous pouvez faire un copier/coller depuis Firefox:
 
 ```bash
-git clone https://github.com/c4dt/sismondi_nft_2024
+git clone https://github.com/c4dt/sismondi_nft_2025
 ```
 
 Une fois que c'est téléchargé, vous pouvez changer dans ce répertoire avec la commande
 suivante:
 
 ```bash
-cd sismondi_nft_2024
+cd sismondi_nft_2025
 ls
 ```
 
@@ -207,40 +207,7 @@ Maintenant, vous pouvez copier la clé privée dans votre fichier `.env`.
 Vous la trouvez dans votre fichier `NOTES.md`.
 Copiez/collez la clé privée dans le fichier `.env`
 
-## 1.3.6 - Enregistrer sur Infura
-
-Pour communiquer avec la blockchain, il vous faut un intermédiaire.
-Ici, on va choisir Infura, et il faut créer un compte.
-Allez sur
-
-[Register Infura](https://app.infura.io/register)
-
-et entrez votre nom (vous pouvez mettre n'importe quoi) et votre email.
-Il est important que l'email soit correcte, parce qu'ils vous envoient
-un lien qu'il faut pour confirmer.
-
-## 1.3.7 - Copier la clé d'accès dans ´.env`
-
-Une fois la régistration confirmée, vous pouvez activer la clé d'accès.
-Cette clé vous permet de vous identifier auprès d'Infura pour créer votre
-contrat.
-
-1. Cliquez sur `API Keys` en haut
-2. Choisissez la clé existante `My First Key`.
-3. Dans la page qui s'ouvre, cochez la case `Sepolia` sous `Ethereum`
-et appuyez sur `Save Changes`.
-4. En haut, vous trouvez la clé d'accès que vous pouvez Copier/coller dans votre 
-`.env`.
-
-Votre `.env` doit maintenant contenir quelque chose comme ça.
-Bien sûr que la clé privée et la clé d'accès auront des valeurs différentes!
-
-```
-PRIVATE_KEY = 0x41ede96cc603bf0d7a0e0bd67819ebaf5802ae8ea1060a4f6f3d8b9d723a24ea
-WEB3_INFURA_PROJECT_ID = a691dd6311fb41eb6f3d8b9d723a24ea
-```
-
-## 1.3.8 - Vérifier le `.env`
+## 1.3.6 - Vérifier le `.env`
 
 Faites le test suivant pour voir si tout a bien fonctionné.
 Lancez la commande suivante:
@@ -251,6 +218,11 @@ Lancez la commande suivante:
 
 Ceci coûte à peu près 0.007 SepoliaETH.
 Le test devrait prendre autour de 30 seconds et il va vous côuter quelques jetons.
+Vous pouvez vérifier que la transaction a été bien reçue par la blockchain en
+copiant le numéro de transaction ou le numéro du contrat dans l'explorateur
+Ethereum:
+
+https://sepolia.etherscan.io
 
 # 2.1 - Configurer le contrat Sismondi_NFT avec vos images
 
