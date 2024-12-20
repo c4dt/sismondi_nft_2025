@@ -1,8 +1,9 @@
 from brownie import SismondiNFT, network, config
-from .common import account, log, log_cost
+from .common import account, log, log_cost, check_gas
 
 import sys
 def deploy():
+    check_gas()
     sismondi_contract = SismondiNFT.deploy(
         {"from": account},
         publish_source=config["networks"][network.show_active()].get("verify")
@@ -12,6 +13,7 @@ def deploy():
     return sismondi_contract
 
 def mint(addr):
+    check_gas()
     sismondi_contract = SismondiNFT.at(addr)
     nft = sismondi_contract.makeSismondiNFT({'from': account})
     nft_id = nft.events['NewSismondiNFTMinted']['tokenId']
