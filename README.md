@@ -4,9 +4,11 @@ Ce répertoire contient la démo pour la semaine des étudiants du gymnase Sismo
 Pendant cette semaine, les étudiants vont passer une journée à l'EPFL pour apprendre
 plus sur les blockchains et les NFTs.
 
-Transparents de la journée: [Blockchains et NFTs](https://docs.google.com/presentation/d/1x2FqWLHjh-F-auDqM0_eJ4Nv5r-jLTy-K3gfAH9umH8/edit?usp=sharing)
+- Transparents de la journée: [Blockchains et NFTs](https://docs.google.com/presentation/d/1x2FqWLHjh-F-auDqM0_eJ4Nv5r-jLTy-K3gfAH9umH8/edit?usp=sharing)
+- Exercices pour la journée: [Exercices pour journée NFTs](https://docs.google.com/presentation/d/1tVdxSfuAkHaKnPkzlBHLCevrtSibBkfaCo6H3vb3Jww/edit?usp=sharing)
+- Invitation pour Discord: [Discord Chat](https://discord.gg/8MJyK3cs)
 
-# 0 - Installation
+# Installation
 
 Le code original a été préparé pour être utilisé dans des machines virtuelles
 Linux.
@@ -26,14 +28,11 @@ Il faut installer les extensions suivantes:
 - `Solidity` pour le smart contract
 - `Python` pour changer la création du smart contrat
 
-# 1.1 - Mise en place
+# II - Mise en place
 
-Puis, on va faire un portefeuille pour vos jetons, et commencer
-à remplir le portefeuille.
-Vu que cette opération va prendre pas mal de temps, on y va avant
-d'avoir vu ce que ça fait vraiment.
+Dans cette partie on va commencer par installer un portefeuille pour vos jetons.
 
-## 1.1.1 - Créer un portefeuille (wallet)
+## II.3 - Créer un portefeuille (wallet)
 
 On verra que les jetons sur la blockchain sont protégés par une "clé privée".
 Cette clé privée est stockée dans un portefeuille, ou "Wallet" en Anglais.
@@ -43,7 +42,8 @@ Si quelqu'un réussi à copier vos clés privées, cette personne a le même acc
 à votre portefeuille.
 Donc ne donnez votre clé privée à personne!
 Le portefeuille Metamask demande un mot de passe qui protègera vos clés privées.
-Pour sécuriser, il est conseillé d'écrire le "recovery phrase" quelque part.
+Pour sécuriser d'avantage, il est conseillé d'utiliser la "recovery phrase" et de la
+stocker quelque part.
 
 On utilisera ici le portefeuille le plus connu: Metamask.
 
@@ -57,7 +57,7 @@ Donc, il est impératif de:
 - ne jamais partager sa clé privée
 - ne pas installer des logiciels d'une source douteuse
 
-## 1.1.2 - Installer Metamask
+### II.3.1 - Installer Metamask
 
 Aller sur le site de Metamask et suivre les instructions d'installation:
 
@@ -72,7 +72,9 @@ noté votre phrase de récupération
 6. Choisissez le réseau "Sepolia": cliquez en haut à gauche dans 
  `Ethereum Mainnet`, puis cochez `Show test networks`, ensuite choisissez "Sepolia".
 
-## 1.1.3 - Charger votre portefeuille avec quelques jetons depuis un "robinet"
+### II.3.2 - Charger votre portefeuille avec quelques jetons depuis un "robinet"
+
+CETTE éTAPE N'EST PAS NéCESSAIRE POUR LA JOURNéE NFTs DU 8 JANVIER 2025!
 
 Pour la prochaine étape, vous avez besoin de quelques jetons.
 Les réseaux blockchains de test vous permettent de recevoir des jetons gratuits.
@@ -89,17 +91,38 @@ Une fois le robinet ouvert, on va continuer la présentation.
 Assurez-vous que le "minage" continue en arrière-plan, parce qu'il vous faudra
 1 SepoliaETH pour le reste de la journée.
 
-# 1.2 - Utiliser des jetons
-
 Assurez-vous que vous avez au moins 1 SepoliaETH jusqu'à maintenant.
 Puis continuez sur l'étape suivante.
 
-## 1.2.1 - Empocher la récompense
+### II.3.3 - Empocher la récompense
 
 Quand le montant est atteint, cliquez sur `Stop Mining`, puis `Claim Rewards` et attendez que vos jetons
 se trouvent sur votre compte.
 
-## 1.2.2 - Vérifier la réception des jetons
+Si vous avez réussi à recevoir une récompense, vous pouvez sauter l'étape II.5.
+
+## II.5 - Recevoir 2 SepoliaETH
+
+Vu qu'un transfert sur la blockchain ne peut pas être annulé, on va faire le transfert
+dans deux étapes:
+
+1. Commencer par un petit montant
+2. Si on est sûr de l'adresse, transférer le reste
+
+Commencez par remplir le "Google Spreadsheet" que vous trouvez dans le canal Discord
+`#ii-setup`.
+Ajoutez votre adresse publique que vous trouvez dans Metamask.
+Puis Linus va vous envoyer 0.1 SepoliaETH.
+Pour prouver que l'adresse a été juste, renvoyez 0.05 SepoliaETH à l'adresse suivante:
+`0x30880e9B16e55922EA76e77e45D93BDb9CE48F01`.
+Dans "Metamask", chosissez votre compte, cliquez `Send`, entrez l'adresse qui commence
+par `0x3088`, indiquez le montant (0.05), puis confirmez la transaction.
+Une fois que Linus a reçu votre retour, il va vous envoyer le reste des jetons
+nécessaire pour le reste de la journée.
+
+# III - Utilisation de ce répertoire
+
+## III.1 - Visualiser le transfert
 
 Maintenant, on va utiliser `Etherscan` pour voir ce qui s'est passé.
 Entrez votre adresse publique sur le site suivant, afin de
@@ -110,9 +133,9 @@ suivre les transactions sur votre compte et depuis votre compte:
 Si vous ne voyez pas votre transaction, assurez-vous que vous êtes connecté au réseau 
 "Sepolia".
 
-## 1.2.3 - Transférer des jetons
+### III.1.1 - Transférer des jetons
 
-Pour finir cette partie, vous allez transférer quelques jetons à vos voisins.
+Si vous avez le temps, vous pouvez transférer quelques jetons à vos voisins.
 Ne mettez pas trop de jetons, quelque chose comme 0.01 est très bien.
 
 1. Demandez à vos voisins leur adresse privée de leur portefeuille
@@ -125,13 +148,13 @@ Vous pouvez utiliser "Discord"
 5. Entrez l'adresse que vous avez reçu de vos voisins
 6. Entrez 0.001 SepETH et confirmez
 
-## 1.2.4 - Visualiser le transfert
+### III.1.2 - Visualiser le transfert
 
 Utilisez de nouveau [Etherscan](https://sepolia.etherscan.io) pour visualiser
 votre compte.
 Cherchez quel lien il faut cliquer pour voir le compte de vos voisins.
 
-# 1.3 - Préparer la configuration de `Brownie`
+## III.2 - Préparer la configuration de `Brownie`
 
 [Brownie](https://eth-brownie.readthedocs.io/en/stable/) est un outil de développement et
 de teste pour écrire des smart contracts pour Ethereum.
@@ -144,7 +167,7 @@ Brownie réunit tous les outils nécessaires pour intéragir avec Ethereum:
 Ici, on va configurer cet outil avec la clé privée et un accès supplémentaire nécessaire
 pour le bon fonctionnement.
 
-## 1.3.1 - Télécharger le répertoire
+### III.2.1 - Télécharger le répertoire
 
 Pour commencer, il faut télécharger le répertoire github sur votre ordinateur.
 Suivez ces étapes:
@@ -170,7 +193,23 @@ ls
 Ceci devrait vous montrer les fichiers dans le répertoire.
 Garder le terminal ouvert, on en aura encore besoin!
 
-## 1.3.2 - Ouvrir avec Visual Studio Code
+### III.2.2 - Regénérer les images
+
+Lancer `brownie` prend un peu de temps la première fois.
+Commencez à recréer les images - cette commande va prendre quelques minutes
+la première fois que vous la lancez.
+Par la suite ça devrait se faire en quelques secondes.
+
+```bash
+./mk_contract.sh
+```
+
+Vous pouvez vérifiez les images générées dans le répertoire `images/results`.
+
+### III.2.3 - Ouvrir avec Visual Studio Code
+
+CETTE éTAPE EST SEULEMENT SI VOUS REFAITES LES EXERCICES EN DEHORS DE LA JOURNéE DU
+8 JANVIER 2025!
 
 Ouvrez maintenant le fichier `NOTES.md` dans Visual Studio Code (VSCode) et commencez
 à le remplir:
@@ -184,30 +223,71 @@ Ouvrez maintenant le fichier `NOTES.md` dans Visual Studio Code (VSCode) et comm
   - Appuyez longuement sur le bouton
   - Copiez/collez la clé privée depuis la fenêtre dans le fichier `NOTES.md`
 
-## 1.3.3 - Créer le fichier `.env`
+## III.3 - Installer vos propres images
+
+Vous pouvez installer vos propres images en les copiant dans les répertoires suivants:
+
+- `images/background` pour les arrière-plans
+- `images/shoe` pour les chaussures
+- `images/sole` pour les semelles
+
+Assurez-vous que les images des chaussures et des semelles sont transparentes, afin de
+pouvoir les superposer les unes sur les autres.
+Les images doivent aussi être de la même taille!
+
+Quand tout est fait, vous pouvez éditer le fichier `scripts/images.py` et changer
+les noms des fichiers tout en bas.
+Pour ouvrir le fichier, je vous propose d'utiliser `Visual Studio Code`.
+Mais vous pouvez aussi utiliser `Thonny`.
+
+Une fois que le fichier est adapté, lancez la commande suivante:
+
+```bash
+./mk_contract.sh
+```
+
+Cette commande devrait s'exécuter sans erreur et produire 6 images dans le répertoire
+`images/results`.
+Assurez-vous que ces six images sont bonnes et représentent les différentes combinaisons
+de vos images.
+
+# IV - Utilisation du réseau de test Sepolia
+
+Dans cette étape nous allons configurer ce répertoire afin d'utiliser le réseau de
+test `Sepolia`.
+
+## IV.1 - Configurer le réseau de test
+
+Dans une première étape nous allons faire la configuration du réseau de test en ajoutant
+votre clé privée dans un fichier de configuration.
+
+### IV.1.1 - Créer le fichier `.env`
 
 Afin de pouvoir envoyer des commandes à la chaîne de teste "Sepolia", il faut configurer
 le fichier `.env`.
 Le plus simple est de copier le fichier `env.example` dans le fichier `.env`.
 
-1. Ouvrez le fichier `env.example` avec VSCode
-2. `Fichier` -> `Enregistrer sous`
-3. Changer le nom en `.env`
-4. Enregistrez avec `OK`
-5. Confirmer que vous voulez faire un fichier caché
-6. Vérifiez dans le terminal que le fichier s'affiche en lançant la commande suivante:
+1. Ouvrez `Visual Studio Code` ou `Thonny`
+  - avec `Visual Studio Code` vous pouvez directement ouvrir le répertoire
+  - avec `Thonny` vous devez choisir `all files` en bas à droite
+2. Ouvrez le fichier `env.example`
+3. `Fichier` -> `Enregistrer sous`
+4. Changer le nom en `.env`
+5. Enregistrez avec `OK`
+6. Confirmer que vous voulez faire un fichier caché
+7. Vérifiez dans le terminal que le fichier s'affiche en lançant la commande suivante:
 
 ```bash
 cat .env
 ```
 
-## 1.3.5 - Copier la clé privée
+### IV.1.2 - Copier la clé privée
 
 Maintenant, vous pouvez copier la clé privée dans votre fichier `.env`.
 Vous la trouvez dans votre fichier `NOTES.md`.
 Copiez/collez la clé privée dans le fichier `.env`
 
-## 1.3.6 - Vérifier le `.env`
+### IV.1.3 - Vérifier le `.env`
 
 Faites le test suivant pour voir si tout a bien fonctionné.
 Lancez la commande suivante:
@@ -224,44 +304,29 @@ Ethereum:
 
 https://sepolia.etherscan.io
 
-# 2.1 - Configurer le contrat Sismondi_NFT avec vos images
+## IV.2 - Installer le contrat NFT sur le réseau Sepolia
 
-Avant d'installer le contrat Sismondi_NFT sur la blockchain, il faut le configurer avec
-vos images.
-Il faut commencer par copier vos images sur l'ordinateur de l'EPFL.
-Puis, il faut transformer les images pour qu'elles soient compatibles avec le smart contract.
-A la fin, il faut copier les images dans le smart contract.
+Dans cette étape on va installer le contrat qui gère les NFTs sur le réseau
+Sepolia.
+Vu que cette étape va utiliser les jetons que vous avez reçu, vous devez être
+prudent·e·s, afin de ne pas gâcher ces jetons.
 
-Il y a trois types d'images, avec deux versions pour chaque type:
-1. Background (fond) qui peut être une image simple
-2. Shoe (chaussure) qui représente la chaussure, mais avec un **arrière-plan transparent**
-3. Sole (semelle) qui représente la semelle, mais avec un **arrière-plan transparent**
+### IV.2.1 - Configurer le contrat Sismondi_NFT avec vos images
 
-Toutes les six images doivent avoir la même dimension!
-Et les images de la chaussure et de la semelle doivent être transparent en-dehors de là
-où il y a le contenu.
-Vous trouvez un exemple dans le dossier [images](./images).
+Dans l'étape III.3 on a configuré votre contrat pour les NFTs.
+Vous trouvez le contrat dans le répertoire ici:
 
-## 2.1.1 - Préparer les images
+`contracts/SismondiNFT.sol`
 
-1. Copier les images dans les sous-répertoires de `./images` en remplaçant les images
-qui y sont déjà présentes
-2. Ouvrez le fichier `./scripts/images.py`
-3. Modifiez le nom des fichiers - faites attention au chemin d'accès
-4. Lancez le script suivant dans le terminal qui va créer le contrat `./contracts/SismondiNFT.sol`:
+Si vous modifiez ce contrat, faites attention au fait que chaque lancement de
+`./mk_images.sh` va écraser le contrat!
 
-```bash
-./mk_contract.sh
-```
+En plus des images, vous pouvez changer les mots qui seront associés aux différents
+NFTs qui sont créés par ce contrat.
+Vous trouvez la liste dans `wordList`.
+Soyez prudent·e·s en changeant la liste que vous respectez la syntaxe du script!
 
-5. Vérifiez que les images résultantes sont bonnes en visualisant le répertoire `./images/results`
-6. Vous pouvez aussi modifier la liste des mots qui est utilisé pour nommer vos NFTs.
-Essayez de montrer de la maturité dans le choix de vos mots...
-
-Chaque NFT se verra attribuer aléatoirement une des images et aussi aléatoirement un des
-mots de la liste.
-
-## 2.1.2 - Tester le contrat localement
+### IV.2.2 - Tester le contrat localement
 
 Avant d'installer le contrat sur la blockchain Sepolia, on va d'abord le tester
 localement.
@@ -284,7 +349,7 @@ Il se peut qu'il y a une erreur qui se termine avec
 
 Ce n'est pas grave, si ou moins, il y a trois blocs qui s'affichent.
 
-## 2.1.3 - Installer le contrat sur le réseau de test Sepolia
+### IV.2.3 - Installer le contrat sur le réseau de test Sepolia
 
 Maintenant que vous avez mis à jour le contrat `SismondiNFT.sol`, et que vous
 avez créé le fichier `.env`, vous êtes prêt·e·s!
@@ -313,24 +378,29 @@ Terminating local RPC client...
 Ce qui est le plus important, c'est le dernier long numéro, dans notre cas le
 `0x3194cBDC3dbcd3E11a07892e7bA5c3394048Cc87`.
 C'est l'adresse de votre contrat sur la blockchain.
-Copiez cette adresse dans le fichier NOTES.md.
+Copiez cette adresse dans le fichier `NOTES_NFTs`.
 
 Vous trouvez tous les messages d'exécution dans le fichier `operations.log`.
 Donc si vous avez oublié l'adresse de votre contrat, vous pouvez y jeter un coup
 d'œil.
 
-## 2.1.4 - Vérifier l'installation du contrat
+### IV.2.4 - Vérifier l'installation du contrat
 
 Avec l'aide de l'outil [Etherscan](https://sepolia.etherscan.io), vous pouvez maintenant
 vérifier que votre contrat est bel et bien installé sur la chaîne.
-Entrez l'adresse du contrat que vous avez reçu en 2.1.3, et regardez ce que
+Entrez l'adresse du contrat que vous avez reçu en IV.2.3, et regardez ce que
 Etherscan sait de votre contrat.
 On verra qu'une fois que vous faites un "mint" sur ce contrat, Etherscan va ajouter
 plus d'information.
 
-# 2.2 - Utilisation du contrat
+## IV.4 - Utilisation du contrat
 
-## 2.2.1 - Minter un NFT
+Maintenant que votre contrat est installé, on va l'utiliser pour créer votre
+premier NFT!
+On appelle cette procédure en Anglais `to mint`, et ici vous trouvez la version
+francisé `minter`.
+
+### IV.4.1 - Minter un NFT
 
 Maintenant, vous êtes prêt·e·s pour faire un mint de votre premier NFT!
 Parce que le contrat lui-même n'a encore rien minté, il n'y a pas encore de
@@ -358,14 +428,34 @@ Les numéros sont sûrement différents des vôtres.
 Ce qu'il faut noter ici, c'est le `id 0`, qui signifie que c'est le premier NFT
 créé par ce contrat. 
 
-## 2.2.2 - Vérifier sur Etherscan
+### IV.4.2 - Vérifier sur Etherscan
 
 Allez regarder de nouveau sur Etherscan l'adresse de votre smart contract et vérifiez
 qu'il y a bien une deuxième transaction.
 Vous pouvez aussi cliquer sur le `Token Tracker` pour voir combien de NFTs ont
 été émis.
 
-## 2.2.3 - Minter un NFT d'un autre groupe
+### IV.4.3 - Visualiser dans OpenSea
+
+La visualisation avec le site OpenSea est possible même sans inscription.
+Allez sur le site ici:
+
+[OpenSea](https://testnets.opensea.io)
+
+Et entrez l'adresse publique de votre compte Metamask.
+Si vous avez déjà minté un NFT, il devrait s'afficher ici.
+
+# V - Utilisation des NFTs
+
+## V.1 - Suivre les comptes d'autres groupes
+
+Visualisez un des comptes publiques d'un autre groupe dans OpenSea et
+regardez leurs NFTs.
+Vous pouvez aussi aller sur Etherscan et voir combien la création du
+contrat et le mintage a coûté.
+Pourquoi ce n'est pas le même montant que chez vous?
+
+## V.2 - Minter un NFT d'un autre groupe
 
 Prenez l'adresse d'un contrat d'un autre groupe, afin de faire
 du mint sur leur contrat à eux.
@@ -377,17 +467,7 @@ Si ce n'est pas le cas, ça peut être à cause de:
 - une erreur dans la transmission de l'adresse
 - que l'autre groupe n'a pas encore fait un premier mint
 
-## 2.2.4 - Visualiser dans OpenSea
-
-La visualisation avec le site OpenSea est possible même sans inscription.
-Allez sur le site ici:
-
-[OpenSea](https://testnets.opensea.io)
-
-Et entrez l'adresse publique de votre compte Metamask.
-Si vous avez déjà minté un NFT, il devrait s'afficher ici.
-
-## 2.2.5 - Ajouter au portefeuille Metamask
+## V.3 - Ajouter au portefeuille Metamask
 
 Afin de transmettre le NFT, on peut utiliser Metamask:
 1. Dans votre page de Metamask, cliquez sur `NFTs`, puis sur `Import NFT`
@@ -395,7 +475,7 @@ Afin de transmettre le NFT, on peut utiliser Metamask:
 
 Vous ne pouvez pas ajouter un NFT que vous n'avez pas minté!
 
-## 2.2.6 - Envoyer vers d'autres utilisateurs
+### V.3.1 - Envoyer vers d'autres utilisateurs
 
 Pour envoyer votre NFT vers un autre utilisateur, vous devez d'abord
 ajouter le NFT comme dans la section précédente.
@@ -413,8 +493,9 @@ Si vous avez des questions ou des retours, n'hésitez pas d'entrer en contact av
 
 # Documentation
 
-- Transparents de la journée: [Blockchains et NFTs](https://docs.google.com/presentation/d/1GHKlwuN6LUVZVcbl2MUnpxUkTPp4grPANSJSazv6McE/edit?usp=sharing)
-- Exercices de la journée: [Exercices NFTs](https://docs.google.com/presentation/d/1tVdxSfuAkHaKnPkzlBHLCevrtSibBkfaCo6H3vb3Jww/edit?usp=sharing)
+- Transparents de la journée: [Blockchains et NFTs](https://docs.google.com/presentation/d/1x2FqWLHjh-F-auDqM0_eJ4Nv5r-jLTy-K3gfAH9umH8/edit?usp=sharing)
+- Exercices pour la journée: [Exercices pour journée NFTs](https://docs.google.com/presentation/d/1tVdxSfuAkHaKnPkzlBHLCevrtSibBkfaCo6H3vb3Jww/edit?usp=sharing)
+- Invitation pour Discord: [Discord Chat](https://discord.gg/8MJyK3cs)
 - Howto qui a été utilisé pour préparer la journée: [Deploy Your First NFT With Python](https://www.codeforests.com/2022/01/14/deploy-your-first-nft-with-python/) - 
     [Github with contract](https://github.com/codeforests/brownie_legendnft) 
 - Contract utilisé pour le NFT: [openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master) 
