@@ -4,7 +4,7 @@ Ce répertoire contient la démo pour la semaine des étudiants du gymnase Sismo
 Pendant cette semaine, les étudiants vont passer une journée à l'EPFL pour apprendre
 plus sur les blockchains et les NFTs.
 
-- Transparents de la journée: [Blockchains et NFTs](https://docs.google.com/presentation/d/1x2FqWLHjh-F-auDqM0_eJ4Nv5r-jLTy-K3gfAH9umH8/edit?usp=sharing)
+- Transparents de la journée: [Blockchains et NFTs](https://docs.google.com/presentation/d/1GHKlwuN6LUVZVcbl2MUnpxUkTPp4grPANSJSazv6McE/edit#slide=id.g322fcac3755_0_139)
 - Exercices pour la journée: [Exercices pour journée NFTs](https://docs.google.com/presentation/d/1tVdxSfuAkHaKnPkzlBHLCevrtSibBkfaCo6H3vb3Jww/edit?usp=sharing)
 - Invitation pour Discord: [Discord Chat](https://discord.gg/8MJyK3cs)
 
@@ -493,7 +493,7 @@ Si vous avez des questions ou des retours, n'hésitez pas d'entrer en contact av
 
 # Documentation
 
-- Transparents de la journée: [Blockchains et NFTs](https://docs.google.com/presentation/d/1x2FqWLHjh-F-auDqM0_eJ4Nv5r-jLTy-K3gfAH9umH8/edit?usp=sharing)
+- Transparents de la journée: [Blockchains et NFTs](https://docs.google.com/presentation/d/1GHKlwuN6LUVZVcbl2MUnpxUkTPp4grPANSJSazv6McE/edit#slide=id.g322fcac3755_0_139)
 - Exercices pour la journée: [Exercices pour journée NFTs](https://docs.google.com/presentation/d/1tVdxSfuAkHaKnPkzlBHLCevrtSibBkfaCo6H3vb3Jww/edit?usp=sharing)
 - Invitation pour Discord: [Discord Chat](https://discord.gg/8MJyK3cs)
 - Howto qui a été utilisé pour préparer la journée: [Deploy Your First NFT With Python](https://www.codeforests.com/2022/01/14/deploy-your-first-nft-with-python/) - 
