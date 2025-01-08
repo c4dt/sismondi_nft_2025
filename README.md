@@ -4,9 +4,9 @@ Ce répertoire contient la démo pour la semaine des étudiants du gymnase Sismo
 Pendant cette semaine, les étudiants vont passer une journée à l'EPFL pour apprendre
 plus sur les blockchains et les NFTs.
 
-- Transparents de la journée: [Blockchains et NFTs](https://docs.google.com/presentation/d/1GHKlwuN6LUVZVcbl2MUnpxUkTPp4grPANSJSazv6McE/edit#slide=id.g322fcac3755_0_139)
-- Exercices pour la journée: [Exercices pour journée NFTs](https://docs.google.com/presentation/d/1tVdxSfuAkHaKnPkzlBHLCevrtSibBkfaCo6H3vb3Jww/edit?usp=sharing)
-- Invitation pour Discord: [Discord Chat](https://discord.gg/8MJyK3cs)
+- Transparents de la journée: [Blockchains et NFTs](./Slides.pdf)
+- Exercices pour la journée: [Exercices pour journée NFTs](./Slides_Exercices.pdf)
+- Comptes Ethereum et contrats NFTs: [Comptes et Contrats](./Comptes_NFTs.pdf)
 
 # Installation
 
@@ -493,9 +493,9 @@ Si vous avez des questions ou des retours, n'hésitez pas d'entrer en contact av
 
 # Documentation
 
-- Transparents de la journée: [Blockchains et NFTs](https://docs.google.com/presentation/d/1GHKlwuN6LUVZVcbl2MUnpxUkTPp4grPANSJSazv6McE/edit#slide=id.g322fcac3755_0_139)
-- Exercices pour la journée: [Exercices pour journée NFTs](https://docs.google.com/presentation/d/1tVdxSfuAkHaKnPkzlBHLCevrtSibBkfaCo6H3vb3Jww/edit?usp=sharing)
-- Invitation pour Discord: [Discord Chat](https://discord.gg/8MJyK3cs)
+- Transparents de la journée: [Blockchains et NFTs](./Slides.pdf)
+- Exercices pour la journée: [Exercices pour journée NFTs](./Slides_Exercices.pdf)
+- Comptes Ethereum et contrats NFTs: [Comptes et Contrats](./Comptes_NFTs.pdf)
 - Howto qui a été utilisé pour préparer la journée: [Deploy Your First NFT With Python](https://www.codeforests.com/2022/01/14/deploy-your-first-nft-with-python/) - 
     [Github with contract](https://github.com/codeforests/brownie_legendnft) 
 - Contract utilisé pour le NFT: [openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master) 
