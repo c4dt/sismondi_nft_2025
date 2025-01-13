@@ -8,6 +8,21 @@ plus sur les blockchains et les NFTs.
 - Exercices pour la journée: [Exercices pour journée NFTs](./Slides_Exercices.pdf)
 - Comptes Ethereum et contrats NFTs: [Comptes et Contrats](./Comptes_NFTs.pdf)
 
+## NFTs of the Students
+
+You can find all the NFTs of the students from the 8th of January in the following
+file: [NFTs.md](./NFTs.md).
+Here is a collection of some of them.
+The low quality comes from the fact that we stored the images directly on the blockchain,
+whereas most NFTs store the images outside of the blockchain.
+
+| NFT | OpenSea Link |
+| --- | ------------ |
+| ![NFT-1](./nft-1.avif) | [OpenSea](https://testnets.opensea.io/assets/sepolia/0x48779e11efe448588aec72221562ccc3f2e56c94/0) |
+| ![NFT-2](./nft-2.avif) | [OpenSea](https://testnets.opensea.io/assets/sepolia/0x4845b65c4c014ebad9fb88766c1019c0e78ca7e0/3) |
+| ![NFT-3](./nft-3.avif) | [OpenSea](https://testnets.opensea.io/assets/sepolia/0x1c6544f62b3090d520909e60c7b3013d133d21e2/0) |
+| ![NFT-4](./nft-4.avif) | [OpenSea](https://testnets.opensea.io/assets/sepolia/0x6d8a35f1b89bb08aca9a18d5c4001b9d34e08cdb/1) |
+
 # Installation
 
 Le code original a été préparé pour être utilisé dans des machines virtuelles
